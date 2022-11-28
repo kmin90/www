@@ -1,0 +1,84 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  font-size: 1.75em;
+  color: #3672c3;
+  font-weight: 600;
+}
+
+.contentArea .contentInner{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contentArea .contentInner p{
+  font-size: 1.2em;
+  width: 1000px;
+  word-break: keep-all;
+  margin: 0 auto;
+  padding: 50px 0;
+  margin-bottom: 100px;
+  line-height: 1.7em;
+}
+.contentArea .contentInner div{
+  width: 1200px;
+  margin-bottom: 100px;
+}
+.contentArea .contentInner div ul{
+  overflow: hidden;
+  padding-left: 8px;
+}
+.contentArea .contentInner div ul li{
+  width: 380px;
+  height: 500px;
+  margin: 0 auto;
+  margin-right: 20px;
+  float: left;
+  margin-bottom: 50px;
+}
+.contentArea .contentInner div ul li:hover{
+  box-shadow: 0px 0px 3px 3px rgb(205 205 205 / 30%);
+}
+.contentArea .contentInner div ul li:nth-child(3n){
+  margin: 0;
+}
+.contentArea .contentInner div ul li img{
+  width: 380px;
+  transition: all .3s ease-out;
+  transform: scale(.95);
+}
+.contentArea .contentInner div ul li:hover img{
+  transform: scale(1);
+}
+
+.contentArea .contentInner div ul li dl{
+  width: 340px;
+  margin: 0 auto;
+}
+.contentArea .contentInner div ul li dl dt{
+  padding: 20px 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  position: relative;
+}
+.contentArea .contentInner div ul li dl dt::before{
+  content: "";
+  display: block;
+  width: 300px;
+  height: 4px;
+  background: #ccc;
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  transition: all .3s ease-out;
+} 
+.contentArea .contentInner div ul li:hover :before{
+  background: #3672c3;
+}
+.contentArea .contentInner div ul li dl dd{
+  line-height: 1.7em;
+  margin-top: 20px;
+}

@@ -1,0 +1,117 @@
+/* 서브페이지 공통영역 */
+.main {
+  width: 2000px;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  top: 0;
+  margin-left: -1000px;
+  margin-top: 80px;
+}
+
+.main h3 {
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  margin-left: -80px;
+}
+.main p {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 220px;
+  margin-left: -92px;
+}
+
+.subNav {
+  border-bottom: 1px solid #ccc;
+}
+.subNav ul {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+}
+.subNav ul li {
+  color: #666;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 200px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.subNav ul li a {
+  display: block;
+  padding: 20px 20px;
+}
+.subNav ul li a:hover {
+  color: #00943a;
+}
+.subNav ul li a:hover:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #00943a;
+  position: absolute;
+  top: 65px;
+  left: 0;
+}
+
+.subNav ul li .current {
+  color: #00943a;
+}
+.subNav ul li .current::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #00943a;
+  position: absolute;
+  top: 65px;
+  left: 0;
+}
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+#content .titleArea {
+  width: 100%;
+  margin: 0 auto;
+}
+#content .titleArea .lineMap {
+  width: 100%;
+  height: 20px;
+  color: #999;
+  padding-top: 10px;
+  margin-left: 1350px;
+}
+
+#content .titleArea .lineMap .home {
+  background: url(../images/home.png) 0 0 no-repeat;
+  text-indent: -999px;
+  overflow: hidden;
+  color: #fff;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+#content .titleArea .lineMap span {
+  padding-right: 5px;
+}
+#content .titleArea .lineMap strong {
+  color: #666;
+}
+#content .titleArea h2 {
+  padding-top: 100px;
+  font-size: 3em;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+#content .contentArea {
+  width: 100%;
+}

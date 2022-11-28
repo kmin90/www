@@ -1,0 +1,651 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+.down{
+   background: url(../images/scrollDown.png)center 30px no-repeat;
+   width: 130px; height: 190px;
+   display: block; position: absolute; 
+	 left:50%; margin-left: -62px; bottom: 10%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:translateY(10px); opacity:1; color:#fff;}
+	100% { transform:translateY(50px); opacity:0.8; color:#888;}
+}	
+	
+
+
+
+#content{ width:100%}
+
+/* section.about 영역 */
+
+#content section.about {
+   width: 95%;
+   margin: 50px auto;
+   background:rgba(0, 0, 0, .8);
+   overflow: hidden;
+   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+   position: relative;
+}
+#content section.about >div{
+   width: 90%; 
+   margin: 0 auto; 
+   position: relative;
+   overflow: hidden;
+}
+#content section.about div h4{
+   text-align: right; margin-top: 100px;}
+#content section.about >div>img{width: 50%; float: left;}
+#content section.about div.text{
+   float: right;
+   width: 45%;
+   margin: 0 auto;
+   text-align: right;
+   margin-top: 6%;
+}
+#content section.about div.text img{
+   width: 100%;
+margin-bottom: 20px;
+}
+#content section.about div.text p{
+   margin-top: 20px;
+}
+#content section.about div.text p.Toruk{
+   text-align: right;
+   font-family: TorukSC;
+   font-size: 2.3vh;
+}
+
+#content section.about div.about_Img{
+   margin-bottom: 50px;
+}
+#content section.about div.about_Img ul{
+   margin: 50px auto;
+}
+
+#content section.about div.about_Img ul li{
+   margin-right:1.5%;
+   width: 32.33%;
+   float: left;
+   box-sizing: border-box;
+}
+#content section.about div.about_Img ul li:nth-child(3){
+   margin-right: 0;
+}
+
+#content section.about div.about_Img ul li img{
+   width: 100%;
+}
+#content section.about a.more{
+   display: block;
+   padding: .5% 3%;
+   border: 1px solid #fff;
+   border-radius: 10px;
+   position: absolute;
+   top: 212px;
+   right: 5%;
+   color: #fff;
+   transition: all .3s;
+}
+#content section.about a.more:hover{
+   background: #fff;
+   color: #333;
+}
+
+/* section.cast 영역 */
+
+#content section.cast {
+   width: 95%;
+   margin: 50px auto;
+   background:rgba(0, 0, 0, .8);
+   overflow: hidden;
+   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+   position: relative;
+}
+#content section.cast>div{
+   width: 100%;
+   margin: 50px auto;
+   overflow: hidden;
+}
+#content section.cast h4{
+   width: 90%;
+   margin: 50px auto;
+}
+
+#content section.cast div p{
+   width: 90%;
+   margin: 0 auto;
+}
+#content section.cast div p span{
+   font-size: 1.875em;
+   padding: 20px 0;
+   display: block;
+}
+#content section.cast div.cast_img ul,
+#content section.cast div.cast_img2 ul{
+   width: 90%;
+   margin: 50px auto; 
+   
+}
+#content section.cast div.cast_img ul li,
+#content section.cast div.cast_img2 ul li{
+  float: left;
+  width: 23.85%;
+  margin-right:1.5%;
+  box-sizing: border-box;
+}
+#content section.cast div ul li:nth-child(4){
+   margin-right:0;
+}
+#content section.cast div ul li img{
+   width: 100%;
+   display: block;
+}
+
+#content section.cast div.navi{
+   background: url(../images/navi_bg.png)0 0 no-repeat;
+   width: 100%;
+   height: 300px;
+   background-size: 100%;
+   margin-bottom: 10%
+}
+#content section.cast div.human{
+   background: url(../images/human_bg.png)0 0 no-repeat;
+   width: 100%;
+   height: 300px;
+   background-size: 100%;
+}
+
+#content section.cast a.more{
+   display: block;
+   padding: .5% 3%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 130px;
+    right: 5%;
+    color: #fff;
+    transition: all .3s;
+}
+#content section.cast a.more:hover{
+   background: #fff;
+   color: #333;
+}
+
+/***** Goliath *****/
+figure.effect-goliath {
+	background: #0073bd;
+   transform: skew(-5deg);
+}
+
+figure.effect-goliath img{
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+   transform: skew(5deg);
+}
+
+
+figure.effect-goliath p {
+   position: absolute;
+	bottom: 0;
+	left: 0;
+	text-transform: none;
+	font-size: 1.5em;
+   padding: 0 0 10px 20px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+
+}
+
+figure.effect-goliath:hover img {
+
+	-webkit-transform: translate3d(0,-10%,0);
+	transform: translate3d(0,-10%,0);
+ 
+}
+
+
+
+figure.effect-goliath:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/***** Apollo *****/
+
+figure.effect-apollo {
+	background: #3498db;
+}
+
+figure.effect-apollo img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+
+figure.effect-apollo:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+
+
+/* video영역 */
+
+#content section.video {
+   width: 95%;
+   margin: 50px auto;
+   background:rgba(0, 0, 0, .8);
+   overflow: hidden;
+   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+position: relative;
+}
+
+
+#content section.video >div{
+   width: 90%; 
+   margin: 50px auto; 
+   overflow: hidden;
+}
+#content section.video div h4{
+   text-align: right;
+   margin-top: 100px;}
+
+#content section.video div div.video_first{
+   width: 60%;
+   height: 500px;
+   float: left;
+}
+#content section.video div div.video_first div.video1{
+   width: 100%;
+   margin-bottom: 20px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 5px;
+}
+#content section.video div div.video_first div.video1 a{
+   display: block;
+}
+#content section.video div div.video_first div.video1 a img{
+   width: 100%;
+   transition: all .3s;
+   transform: scale(1);
+   
+}
+#content section.video div div.video_first div.video1::before{
+   content: '';
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 70px;
+   height: 70px;
+   background: url(../images/play.png) 50% 50% no-repeat;
+   background-size: 100% auto;
+   transition: background .3s;
+   z-index: 2;
+   opacity: .5;
+}
+#content section.video div div.video_first div.video1 a:hover img{
+   transform: scale(1.1);
+
+}
+#content section.video div div.video_first div.video1:hover:before{
+opacity: 1; 
+
+}
+#content section.video div div.video_first div.videoTxt p{
+   margin-top: 20px;
+}
+#content section.video div div.video_second{
+   float: right;
+   width: 35%;
+}
+
+#content section.video div img{
+   width: 100%;
+}
+
+#content section.video div div.video_second{
+  position: relative;
+   margin-top: 15%;
+}
+#content section.video div div.video_second div.video2,
+#content section.video div div.video_second div.video3{
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   border-radius: 5px;
+
+}
+#content section.video div div.video_second div.video2 a,
+#content section.video div div.video_second div.video3 a{
+   width: 100%;
+   display: block;
+}
+#content section.video div div.video_second div.video2 a img,
+#content section.video div div.video_second div.video3 a img{
+   width: 100%;
+   transition: all .3s;
+   transform: scale(1);
+}
+#content section.video div div.video_second div.video2::before,
+#content section.video div div.video_second div.video3::before{
+   content: '';
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 70px;
+   height: 70px;
+   background: url(../images/play.png) 50% 50% no-repeat;
+   background-size: 100% auto;
+   transition: background .3s;
+   z-index: 2;
+   opacity: .5;
+}
+#content section.video div div.video_second div.video2:hover img,
+#content section.video div div.video_second div.video3:hover img{
+   transform: scale(1.1);
+}
+
+#content section.video div div.video_second div.video2:hover:before,
+#content section.video div div.video_second div.video3:hover:before{
+   opacity: 1; 
+}
+
+#content section.video div div.video_second div.video3{
+   margin-top: 30px;
+} 
+
+#content section.video a.more{
+   display: block;
+   padding: .5% 3%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 350px; */
+    right: 5%;
+    color: #fff;
+    transition: all .3s;
+}
+#content section.video a.more:hover{
+   background: #fff;
+   color: #333;
+}
+
+/* gallery 영역 */
+
+
+#content section.gallery{
+   width: 100%;
+   background-image: url(../images/gallery_bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-bottom: 150px;
+   position: relative;
+}
+#content section.gallery>div{
+   width: 95%;
+   margin: 0 auto;
+}
+#content section.gallery div h4{
+   margin: 50px auto;
+   text-align: center;
+   padding: 100px 0;
+}
+#content section.gallery div ul{
+   column-count: 4;
+   column-gap: 5px;
+   column-width: 300px;
+   /* align-items: center; */
+}
+#content section.gallery div ul li{
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+#content section.gallery div ul li img.item1{
+
+   border-radius: 10px;
+   width: 98%;
+   transition: all 1s;
+   transform: rotateY(0);
+}
+#content section.gallery div ul li:hover img.item1{
+   filter: grayscale(1);
+   transform: rotateY(180deg);
+}
+
+#content section.gallery div ul li img.item{
+   border-radius: 10px;
+   width: 98%;
+   transition: all 1s;
+}
+#content section.gallery div ul li:hover img.item{
+   filter: grayscale(1);
+}
+
+#content section.gallery a.more{
+   display: block;
+   padding: .5% 3%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    transition: all .3s;
+}
+#content section.gallery a.more:hover{
+   background: #fff;
+   color: #333;
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	#content section.gallery div ul {
+      column-count: 3;
+      column-width: 0;}
+
+ #content section.about div.text{
+    margin-top: 15%;
+}
+#content section.about div.text img,
+#content section.gallery div ul li:nth-child(7),
+#content section.gallery div ul li:nth-child(8){
+display: none;
+}
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+#content section.about div.about_Img ul li{
+   width: 49.2%;
+}
+#content section.cast div.cast_img ul li,
+#content section.cast div.cast_img2 ul li{
+   width: 32.3%;
+}
+#content section.cast div ul li:nth-child(3),
+#content section.about div.about_Img ul li:nth-child(2){
+   margin: 0;
+}
+figure.effect-goliath p{
+   font-size: 1.250em;
+}
+
+#content section.cast div ul li:nth-child(4),
+#content section.about div.about_Img ul li:nth-child(3){
+display: none;
+}
+#content section.cast div.navi{
+   background: url(../images/navi_bg.png)0 50px no-repeat;
+   padding-top: 50px;}
+#content section.cast div.human{
+   background: url(../images/human_bg.png)0 50px no-repeat;
+   padding-top: 50px;
+}
+
+
+figure.effect-goliath p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+#content section.cast h4,
+#content section.about div h4{
+   text-align: center;
+}
+#content section.video div h4{
+   margin:0; text-align: center;
+   margin: 50px 0 100px 0;
+}
+#content section.cast a.more,
+#content section.video a.more{
+top: 200px;
+right: 45%;
+transform: translateX(30%);}
+#content section.about >div>img{
+   width: 100%; float: none;  
+   margin-top: 50px;}
+#content section.about div.text p.Toruk{
+   text-align: center;
+}
+#content section.about div.text{
+   width: 100%;
+   text-align: center;
+}
+#content section.cast div.cast_img ul li,
+#content section.cast div.cast_img2 ul li{
+   width: 49.2%;
+}
+#content section.cast div ul li:nth-child(2){
+   margin: 0;
+}
+#content section.cast div ul li:nth-child(3){
+   display: none;
+}
+#content section.gallery div ul {
+   column-count: 2;
+   column-width: 0;}
+#content section.gallery div ul li:nth-child(6),
+#content section.gallery div ul li:nth-child(5){
+display: none;
+}
+
+#content section.about a.more {
+   top: 200px;
+   right: 45%;
+   transform: translateX(30%);
+}
+
+#content section.video div div.video_first{
+   width: 100%;
+   height: 100%;
+   float: none;
+}
+#content section.video div div.video_second{
+   float: none;
+   display: none;
+}
+#content section.video div div.video_first div.videoTxt p{
+   text-align: center;
+}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   
+#content section.about div.about_Img{
+         margin:0;
+   }
+#content section.about div.about_Img ul li{
+      display: none;
+   }
+   figure.effect-goliath p{
+      font-size: 1em;
+   }
+#content section.gallery div ul {
+      column-count: 1;}
+#content section.gallery div ul li{
+      width: 100%;
+   }
+#content section.gallery div ul li:nth-child(3),
+#content section.gallery div ul li:nth-child(4){
+display: none;
+}
+}
+
+
+

@@ -1,0 +1,103 @@
+<!-- 헤더 공통 요소 -->
+<div id="skipNav">
+  <a href="#content">본문바로가기</a>
+  <a href="#gnb">글로벌네비게이션바로가기</a>
+</div>
+<div class="wrap">
+  <header id="headerArea">
+    <div class="headerInner">
+      <h1 class="yuhanLogo">
+        <a href="../index.html">유한양행</a>
+      </h1>
+
+      <nav id="gnb">
+        <h2 class="hidden">글로벌네비게이션영역</h2>
+        <ul class="dropdownmenu">
+          <li class="m1 menu">
+            <h3><a class="depth1" href="../sub1/sub1_1.html">기업소개</a></h3>
+            <ul>
+              <li><a href="../sub1/sub1_1.html">회사개요</a></li>
+              <li><a href="../sub1/sub1_2.html">CEO 인사말</a></li>
+              <li><a href="../sub1/sub1_3.html">회사연혁</a></li>
+              <li><a href="../sub1/sub1_4.html">기업이념</a></li>
+              <li><a href="../sub1/sub1_5.html">오시는길</a></li>
+            </ul>
+        </li>
+        <li class="m2 menu">
+            <h3><a class="depth1" href="../sub2/sub2_1.html">제품소개</a></h3>
+            <ul>
+              <li><a href="../sub2/concert/list.php">제품소개</a></li>
+              <li><a href="../sub2/sub2_2.html">제품소식</a></li>
+              <li><a href="../sub2/sub2_3.html">브랜드</a></li>
+            </ul> 
+        </li>
+        <li class="m3 menu">
+            <h3><a class="depth1" href="../sub3/sub3_1.html">연구개발</a></h3>
+            <ul>
+              <li><a href="../sub3/sub3_1.html">미션&비전</a></li>
+              <li><a href="../sub3/sub3_2.html">연구전략</a></li>
+              <li><a href="../sub3/sub3_3.html">협력파트너</a></li>
+              <li><a href="../sub3/sub3_4.html">주요설비</a></li>
+            </ul>
+        </li>
+        <li class="m4 menu">
+            <h3><a class="depth1" href="../sub4/sub4_1.html">투자정보</a></h3>
+            <ul>
+              <li><a href="../sub4/sub4_1.html">관리규정</a></li>
+              <li><a href="../sub4/sub4_2.html">재무정보</a></li>
+              <li><a href="../sub4/sub4_3.html">사업보고서</a></li>
+            </ul>
+        </li>
+        <li class="m5 menu">
+            <h3><a class="depth1" href="../sub5/sub5_1.html">윤리경영</a></h3>
+            <ul>
+              <li><a href="../sub5/sub5_1.html">준법경영</a></li>
+              <li><a href="../sub5/sub5_2.html">사회공헌</a></li>
+              <li><a href="../sub5/sub5_3.html">환경경영</a></li>
+              <li><a href="../sub5/sub5_4.html">안정경영</a></li>
+            </ul>
+        </li>
+        <li class="m6 menu">
+            <h3><a class="depth1" href="../sub6/greet/list.php">고객지원</a></h3>
+            <ul>
+              <li><a href="../sub6/greet/list.php">뉴스&공지</a></li>
+              <li><a href="../sub6/sub6_2.html">자주묻는질문</a></li>
+              <li><a href="../sub6/sub6_3.html">온라인상담</a></li>
+            </ul>
+           </li>
+      </ul>
+
+        <div class="sideMenu">
+          <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+          //$userid=$_SESSION['userid']; 정석 
+          
+              if(!$userid){
+        
+          ?>
+
+          <ul>
+            <li class="login"><a href="../login/login_form.php">로그인</a></li>
+            <li><a href="../member/join.html">회원가입</a></li>
+          </ul>
+
+          <?
+        }
+        else
+        {
+      ?>
+
+          <ul>
+            <li class="logout"><a href="../login/logout.php">로그아웃</a></li>
+            <li><a href="../member/member_form_modify.php">정보수정</a></li>
+          </ul>
+          <?
+        }
+      ?>
+        </div>
+      </nav>
+    </div>
+  </header>
+

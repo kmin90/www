@@ -1,0 +1,232 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contentArea .contentInner .content1{
+    width: 1200px;
+    margin: 150px auto;
+    
+  }
+  .contentArea .contentInner .content1 h3,
+  .contentArea .contentInner .content2 h3{
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 500;
+    color: #3672c3;
+  }
+ 
+  .contentArea .contentInner .content1 > p,
+  .contentArea .contentInner .content2 > p{
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 30px 0 200px 0;
+    text-align: center;
+    position: relative;
+  }
+  .contentArea .contentInner .content1 div p,
+  .contentArea .contentInner .content2 div p{
+    width: 740px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+    word-break: keep-all;
+  }
+  .contentArea .contentInner .content1 > p::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #3672c3;
+    position: absolute;
+    top: 98px;
+    left: 600px;
+  } 
+  .contentArea .contentInner .content1 ul{
+    width: 850px;
+    overflow: hidden;
+    padding: 80px 5px 5px 5px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+     }
+  .contentArea .contentInner .content1 ul li{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    margin-right: 50px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, .2);
+    }
+    .contentArea .contentInner .content1 ul li:nth-child(3){
+      margin: 0;
+    }
+  .contentArea .contentInner .content1 ul li dl{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to bottom, #3672c3, #90bdf8, #3672c3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    }
+  .contentArea .contentInner .content1 ul li dl dt{
+    margin-top: 90px;
+    position: relative;}
+  .contentArea .contentInner .content1 ul li dl dt i{
+    font-size: 4em;
+    display: block;
+    padding: 40px 0;
+    color: #3672c3;
+    border: 8px solid #3672c3;
+    background: #fff;
+    width: 140px;
+    height: 60px;
+    border-radius: 90px;
+    position: absolute;
+    top: -180px;
+    left: 23px;
+  }
+  .contentArea .contentInner .content1 ul li dl dt span{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    display: block;
+  }
+  
+  .contentArea .contentInner .content1 ul li dl dd{
+   padding: 5px 0;
+  }
+  .contentArea .contentInner .content2{
+    width: 1200px;
+    margin: 150px auto;
+  }
+
+  .contentArea .contentInner .content2 > p::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #3672c3;
+    position: absolute;
+    top: 78px;
+    left: 600px;
+  }
+
+  .contentArea .contentInner .content2 ul{
+    width: 800px;
+    margin: 0 auto;
+  }
+  .contentArea .contentInner .content2 ul li{
+   height: 100px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   font-size: 1.3em;
+   overflow: hidden;
+   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+   position: relative;
+  }
+  .contentArea .contentInner .content2 ul li span{
+    display:block;
+    text-align: center;
+    color: #fff; 
+    font-size: 1.8em;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    z-index: 10;
+  }
+  .contentArea .contentInner .content2 ul li::after{
+    content: "";
+    display:block;
+    width: 250px;
+    height: 100px;
+    background: #3672c3;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 0%, 60% 0%, 80% 50%, 60% 100%, 60% 100%, 0% 100%);
+  }
+
+  .contentArea .contentInner .content2 ul li p{
+  padding: 35px 0 0 250px;
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(1)::before{
+    content: "";
+    display: block;
+    width: 338px;
+    height: 20px;
+    background: rgba(250, 50, 50, .1);
+    position: absolute;
+    top: 49px;
+    left: 246px;
+    transition: all .3s ease-out;
+    transform-origin: top left;
+    transform:scaleX(0);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(1):hover:before{
+    transform:scaleX(1);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(2)::before{
+    content: "";
+    display: block;
+    width: 273px;
+    height: 20px;
+    background: rgba(250, 50, 50, .1);
+    position: absolute;
+    top: 49px;
+    left: 246px;
+    transition: all .3s ease-out;
+    transform-origin: top left;
+    transform:scaleX(0);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(2):hover:before{
+    transform:scaleX(1);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(3)::before{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 20px;
+    background: rgba(250, 50, 50, .1);
+    position: absolute;
+    top: 49px;
+    left: 246px;
+    transition: all .3s ease-out;
+    transform-origin: top left;
+    transform:scaleX(0);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(3):hover:before{
+    transform:scaleX(1);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(4)::before{
+    content: "";
+    display: block;
+    width: 210px;
+    height: 20px;
+    background: rgba(250, 50, 50, .1);
+    position: absolute;
+    top: 49px;
+    left: 246px;
+    transition: all .3s ease-out;
+    transform-origin: top left;
+    transform:scaleX(0);
+  }
+  .contentArea .contentInner .content2 ul li:nth-child(4):hover:before{
+    transform:scaleX(1);
+  }

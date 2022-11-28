@@ -1,0 +1,64 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+  }
+
+table{width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    text-align: center;
+    position: relative;
+    }
+
+table caption{
+    font-size: 2em;
+    padding: 50px 0;
+    }
+table thead{
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.35em;
+    font-weight: 600;
+    background: rgba(54, 114, 195, .2);
+  }
+table tbody td,
+table thead td{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+table tbody td:last-child,
+ table thead td:last-child
+  {
+    border-right:0;
+  }
+table tr td{
+    padding: 20px;
+  }
+table tbody tr td{
+    color: #666;
+  }
+table tbody tr td:nth-child(1){
+    font-weight: 600;
+  }
+
+  table tbody tr td a{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  table tbody tr td a:hover{
+    background: #3672c3;
+    color: #fff;
+  }

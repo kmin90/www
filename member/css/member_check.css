@@ -1,0 +1,241 @@
+body{background-color: #f8f8f8;}
+.logo{margin: 50px auto; display: block; width: 200px; height: 47px;}
+#content{width: 750px; margin: 30px auto; background: #fff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .3);
+     padding: 70px;}  
+
+
+.member_tab{padding: 30px 0;border-top: 1px solid #333;}
+.member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
+.member_tab a.on{color: #333;border-bottom: 2px solid #333;font-weight: bold}
+.member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #333;font-weight: bold}
+
+.join{text-align: left; position: relative;}
+.join h4{font-size: 20px;margin: 30px 0; color: #333;}
+.join h3{font-size: 28px; margin-bottom: 50px; color: #333; margin-left: 10px;}
+.join h3::before{content: ''; position: absolute; top: 4px; left: 0; width: 5px; height: 28px;
+    background: #00943a;}
+.join .policy{padding: 10px; overflow-y: scroll; height: 80px; margin: 20px 0;border: 1px solid #ddd;
+    background: #fff; font-size: 14px; line-height: 1.5em;}
+.join .check{color: #333; margin: 20px 0 60px;}
+.join .button{text-align: center;margin-top: 30px}
+.join .button .ok{border-radius: 20px;
+    display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;background: #3672c3;color: #fff;font-size: 14px;cursor: pointer;
+    margin: 0 5px;text-decoration: none;}
+    .join .button .ok:hover{
+        text-decoration: underline;
+    }
+    .join .allcheck:hover{
+        background: #ccc;
+    }
+    .join .button button:hover{
+        background: tomato;
+    }
+   
+.join .button button{text-decoration: none;border-radius: 20px;
+    display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;background: #fff; font-size: 14px;cursor: pointer;color: #fff;
+    margin: 0 5px;}
+.join .allcheck{text-decoration: none;border-radius: 20px;
+    display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;background: #fff;color: #333;font-size: 14px;cursor: pointer;
+    margin: 0 5px;}
+
+.join .button .cancel{display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
+.join .allcheck{background: transparent; border: 1px solid #333;}
+
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid #999;
+    border-radius: 50%;
+    content: '';
+    margin: 0px 15px -6px 0px;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label::before {
+    background: #fff url(../images/checked_bg.png) center center no-repeat;
+    border: 2px solid #3672c3;
+}
+
+table{display: block;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;}
+h2{
+text-align: center;
+font-size: 2em;
+margin-bottom: 30px;
+}
+
+table tr th{
+text-align: left;
+ position: relative;
+ width:150px; 
+ padding: 20px 0; 
+}
+table tr th::after{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #f95162;
+  position: absolute;
+  top: 18px;
+  left: -9px;
+}
+    
+table tr td input{
+height: 30px;
+border:0;
+border-bottom: 1px solid #ccc;
+    }
+table tr td #email1{
+    width: 100px;
+}
+#hp1{
+    margin-right: 5px;
+    }
+table tr .hp{
+    width: 70px;
+    height: 30px;
+}
+table tr td a{
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
+}
+table tr td a:nth-child(1){
+  margin-left: 136px;
+  margin-right: 20px;
+}
+
+table tr td a{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+table tr td a:hover{
+  background: #3672c3;
+  color: #fff;
+}
+#content p{
+    margin: 0 10px 50px 0;
+    padding: 5px 10px 5px 20px;
+    display: inline-block;
+    background: #f95162;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 344px;
+    position: relative;
+}
+    #content p::after{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: #fff;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+
+/* 정보수정 */
+
+
+
+#title h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  #title h3::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #00943a;
+    position: absolute;
+    top: 62px;
+    left: 350px;
+  }
+  #hp1{
+    width: 60px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  #join2 input.hp{
+    width: 60px;
+  }
+  #email1{
+    width: 100px;
+  }
+  #nick2{position: relative;}
+  /* #nick2 a{
+    background: #ccc;
+    position: absolute;
+    top: -32px;
+    right: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  #nick2 a:hover{
+    background: #3672c3;
+    color: #fff;
+  } */
+  #form_join{
+    padding: 20px;
+    /* box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2);
+    width: 600px; */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #join1{
+    margin-left: 138px;
+    float: left;
+  }
+  #join2{
+    float: left;
+    margin: 4px 0 0 40px;
+  }
+  #join1 ul li{
+    font-weight: 500;
+    padding: 21px 0;
+  }
+  #join2 ul li{
+    padding: 15px 0;
+  }
+  #join2 ul li input{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+  }
+  #button{
+     text-align: center;
+     margin-top:30px;
+  }
+  #button a{
+    background: #ccc;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  #button a:hover{
+    background: #3672c3;
+    color: #fff;
+  }

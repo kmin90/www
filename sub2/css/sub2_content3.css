@@ -1,0 +1,173 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  .contentArea .contentInner ul{
+    float: left;
+  }
+  .contentArea .contentInner ul li a.tab{
+      filter: grayscale(1);
+  }
+  .contentArea .contentInner ul li a img{
+   width: 150px;
+ 
+  }
+  .contentArea .contentInner div ul{
+    float: right;
+    height: 1080px;
+  }
+  
+  .contentArea .contentInner div img{
+    border: 1px solid #ccc;
+    width: 800px;
+    height: 462px;
+    margin-bottom: 50px;
+  }
+  .contentArea .contentInner div .contlist{
+    text-align: right;
+    display: none;}
+  .contentArea .contentInner div ul li p{
+    width: 700px;
+    line-height: 2em;
+    text-align: justify;
+    word-break: keep-all;
+    text-align: right;
+    font-size: 1em;
+    padding-bottom: 20px;
+    margin-left: 190px;
+  }
+
+  .contentArea .contentInner p span{
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #701c27;
+  }
+  .contentArea .contentInner p .color1{
+    color: #e6007e;
+  }
+  .contentArea .contentInner p .color2{
+    color: #00943a;
+  }
+  .contentArea .contentInner p .color3{
+    color: #3672c3;
+  }
+  .contentArea .contentInner p .color4{
+    color: #ecc61d;
+  }
+  .contentArea .contentInner p .color5{
+    color: #d68220;
+  }
+  .contentArea .contentInner p .color6{
+    color: rebeccapurple;
+  }
+  .contentArea .contentInner div ul li{
+    margin-top: 20px;
+  }
+
+  .contentArea .contentInner div .contlist .openBtn{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 5px;
+    position: relative;
+    border-bottom: 2px solid #ccc;
+  }
+.contentArea .contentInner div .contlist a.openBtn::after{
+  content: '';
+  display: block;
+  width: 210px;
+  height: 2px;
+  position: absolute;
+  top: 37px; left: 0;
+  transform-origin: top left;
+  transition: all .3s;
+  transform: scaleX(0);
+}
+.contentArea .contentInner div .contlist a.openBtn:hover:after{
+  transform: scaleX(1);
+  background: #00943a;
+}
+
+.contentInner .modal_box{position: fixed; 
+    left: 0; top: 0; z-index: 60; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+    
+.contentInner div.popup{
+  position: fixed; top: 50%; left: 50%; 
+    margin: -300px 0 0 -300px; 
+    width: 800px; height: 500px; 
+    background: #fff; 
+    box-shadow: 1px 3px 7px 0px #666;
+    z-index: 70;
+    display:none;
+  }
+  
+
+.contentInner div.popup .pic{
+display: block;
+float: left;
+width: 400px;
+height: 400px;
+margin: 0 auto;
+  }
+.contentInner div.popup .pic .name{
+ display: block;
+ text-align: center;
+}
+.contentInner div.popup .pic img{
+  width: 300px; height: 300px; 
+  margin:30px 50px 10px 50px;
+  }
+
+.contentInner div.popup dl{
+  float: right;
+  width: 350px;
+  padding: 30px 20px 20px 0;
+  margin-right: 25px;
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.5em;
+}
+.contentInner div.popup dl dt{
+  font-size: 1.3em; font-weight: 500; 
+  margin: 0 0 15px 0; color: orange;
+}
+.contentInner div.popup dl dt.maginT{
+  margin-top: 15px;
+}
+
+.contentInner div.popup dl dd span{
+    font-size: 1.1em;
+    font-weight: 500;
+    display: block;
+    margin: 5px 0;
+  }
+.contentInner div.popup .close_btn{
+  position: absolute;
+  bottom: 20px;
+  right: 49%;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  border: 1px solid #ccc;
+  width: 45px;
+  height: 25px;
+  border-radius: 20px;
+}
+.contentInner div.popup .close_btn:hover{
+  background: #3672c3;
+  color: #fff;
+}

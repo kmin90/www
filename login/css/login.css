@@ -1,0 +1,225 @@
+body{background-color: #f8f8f8;}
+.logo{margin: 50px auto; display: block; width: 200px; height: 47px;}
+
+form{
+    background: #fff;
+    width: 500px;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .3);
+}
+.login_input{
+padding: 10px;
+margin: 20px 0;
+box-sizing: border-box;
+}
+input{
+   padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+#id_pw_input h2{
+   font-size: 2em;
+   text-align: center;
+   margin: 10px 0 50px 0;
+}
+#id_pw_input ul li span{
+    display: inline-block;
+    width: 100px;
+    padding: 20px 0;
+    text-align: right;
+    margin: 0 20px 0 70px;
+}
+
+button{
+    display: block;
+    border: 1px solid #3672c3;
+    background-color: #fff;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3672c3;
+    color: #fff;}
+
+
+
+#join_button{
+    font-size: 14px;
+    text-align: center;
+}
+#join_button a:hover{
+    text-decoration: underline;
+}
+
+
+form>ul{
+    margin: 30px 0;
+    text-align: center;
+}
+form>ul li span:first-child{
+    margin-left: 15px;
+    position: relative;
+}
+form>ul li span:first-child::after{
+content: '';
+display: block;
+width: 1px;
+height: 20px;
+background: #ccc;
+position: absolute;
+top: 3px;
+right: -3px;
+}
+form>ul li{
+     margin: 20px 0;
+}
+form>ul li a{
+   
+    padding: 5px 10px;}
+form>ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* id_find */
+
+
+#title p{
+   font-size: 14px;
+   color: #999;
+   text-align: center;
+}
+#title p span{
+    color: #333;
+    display: block;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+}
+#title p span::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #00943a;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+}
+#id_pw_input h2{
+    position: relative;
+}
+#id_pw_input h2::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #00943a;
+    position: absolute;
+    top: 62px;
+    left: 220px;
+}
+#login2 {
+    margin: 50px auto;
+}
+
+#login2 fieldset label{
+width: 100px;
+padding: 20px 0;
+text-align: right;
+margin:0 20px 0 90px;
+}
+#name{
+    margin-left: 15px;
+}
+#hp1{
+    width: 60px;
+    height: 30px;
+}
+fieldset input{
+    padding: 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+fieldset input.hp{
+    width: 60px;
+}
+
+
+
+input.find{
+    display: block;
+    border: 1px solid #3672c3;
+    background-color: #fff;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+input.find:hover{
+    background-color: #3672c3;
+    color: #fff;}
+ul.go li:last-child{
+    font-size: 14px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+ul.go li:last-child:hover{
+    text-decoration: underline;
+}
+
+ul.go{text-align: center;}
+ul.go li a.loggo {
+    background-image: linear-gradient(
+        to right,
+        #3672c3,
+        #3672c3 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    }
+  
+ul.go li a.loggo:before {
+    content: '';
+    background: #3672c3;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    }
+    
+ul.go li a.loggo:hover {
+    background-position: 0;
+    }
+    
+ul.go li a.loggo:hover::before {
+    width:100%;
+    }
+
+
+
+
+.loadtexton{
+    display: block;
+    background: #f8f8f8;
+    padding: 20px 100px;
+    margin: 50px 0;
+    line-height: 2em;
+}

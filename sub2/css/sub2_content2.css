@@ -1,0 +1,15 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }

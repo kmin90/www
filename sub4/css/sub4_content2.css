@@ -1,0 +1,95 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+.tapmenu{
+  width: 1000px;
+  margin: 150px auto;
+  overflow: hidden;
+}
+
+.tapmenu li{
+  float: left;
+}
+.tapmenu li a{
+  display: block;
+  border: 1px solid #ccc;
+  font-size: 1.3em;
+  padding: 15px 79px;
+  font-weight: 400;
+}
+/* .tapmenu li a.tab1{
+  border-top: 2px solid #3672c3;
+  border-bottom: 0;
+  color: #3672c3;
+  font-weight: 600;
+} */
+.table1{width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  text-align: center;
+  position: relative;
+  display: none;
+  }
+.table1 table{
+    width: 1000px;
+  }
+.table1 table caption{
+  font-size: 2em;
+  padding: 50px 0;
+  }
+.table1 table thead{
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.35em;
+  font-weight: 600;
+  background: rgba(54, 114, 195, .2);
+}
+.table1 table tbody td,
+.table1 table thead td{
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.table1 table tbody td:last-child,
+.table1  table thead td:last-child
+{
+  border-right:0;
+}
+.table1 table tr td{
+  padding: 20px;
+}
+.table1 table tbody tr td{
+  color: #666;
+}
+.table1 table tbody tr td:nth-child(1){
+  font-weight: 500;
+}
+
+.table1 span{ 
+  font-size: .9em;
+  position: absolute;top: 550px; right: 0;}
+
+  .table1 .Unit{
+    position: absolute;top: 680px; right: 0;
+  }
+  .table1 .Unit1{
+    position: absolute;top: 680px; right: 0;
+  }
+
+  .table1 .bg{
+    background: rgba(54, 114, 195, .1);
+  }
+  .table1 .bg td{
+    color: #3672c3;
+  }

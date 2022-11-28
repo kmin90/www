@@ -1,0 +1,74 @@
+.contentArea > p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+.contentArea > p span {
+  font-size: 1.35em;
+  color: #3672c3;
+  font-weight: 600;
+}
+.contentArea div {
+  width: 1200px;
+  margin: auto;
+}
+.contentArea div ul .contentList1 {
+  background: url(../images/content4/philosophy1.jpg) top right no-repeat;
+  padding-top: 100px;
+}
+.contentArea div ul .contentList2 {
+  padding-top: 100px;
+  background: url(../images/content4/philosophy2.jpg) top left no-repeat;
+}
+.contentArea div ul .contentList3 {
+  padding-top: 100px;
+  background: url(../images/content4/philosophy3.jpg) top right no-repeat;
+}
+
+.contentArea div ul li dl {
+  margin-bottom: 250px;
+  z-index: 20;
+  width: 600px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+}
+.contentArea div ul li dl dt {
+  padding: 70px 60px 30px 60px;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.contentArea div ul li dl dd {
+  font-size: 1.2em;
+  line-height: 2em;
+  word-break: keep-all;
+  padding: 0 60px;
+}
+.contentArea div ul .contentList2 dl {
+  margin-left: 600px;
+  text-align: right;
+}
+
+
+ /* #content .sect{position: relative; 
+  right: 100px; opacity: 0;
+   transform: translateX(.7);
+transition: all .5s;} 
+
+#content .sect.boxMove{
+  right:0; opacity: 1 ; transform: translateX(1);
+} */
+/*#content li.Rmove
+{
+  right: 500px; opacity: 0;
+  transform: translateX(.7);
+  transition: all .5s;
+}
+#content li.Rmove .boxMove
+{
+  right: 0; opacity: 1;
+  transform: translateX(1);
+} */

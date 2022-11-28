@@ -1,0 +1,83 @@
+
+#text {
+  font-family: TorukSC;
+  font-size: 8vw;
+  transform:skewY(-5deg);
+  visibility:hidden;
+  animation : display .5s cubic-bezier(.6,.0,.15,1) 2s forwards;
+  position: relative;
+  position: absolute;
+  top: 40%; left: 40%;
+  }
+  
+  #text:before,
+  #text:after {
+    content: attr(data-text);
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    display: block;
+    top: auto;
+    bottom: 0;
+    z-index: 3;
+  }
+  
+  #text:before {
+    // color: lighten($colorOne,0%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    animation: move-left 2s cubic-bezier(.6,.0,.15,1),
+               blur 1s linear 2s forwards; 
+  }
+  
+  #text:after {
+    // color: lighten($colorOne,20%);
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    animation: move-right 2s cubic-bezier(.6,.0,.15,1),
+               blur 1s linear 2s forwards;
+  }
+  
+  @keyframes move-left{
+    from{
+      transform:translate(-100%,-20%);
+      
+    }50%{
+      transform:translate(0%,-20%);
+    }90%{
+    transform:translate(0%,0%);
+    }100%{
+      opacity:0;}
+  }
+  
+  @keyframes move-right{
+    from{
+      transform:translate(100%,30%);
+    }50%{
+      transform:translate(0%,30%);
+    }90%{
+      transform:translate(0%,0%);
+
+    }100%{
+        opacity:0;}
+  }
+  
+  @keyframes blur{
+    from{
+      transform:scale(1);
+      opacity:1;
+    }
+    to{
+      transform:scale(.8);
+      opacity:0;
+    }
+  }
+  
+  @keyframes display{
+    from{
+     visibility: hidden;
+    transform:skewY(-5deg)scale(.8); opacity:0; 
+    }to{
+     visibility: visible;
+    transform:skewY(-5deg)scale(1); opacity:1; 
+    }
+  }
+ 

@@ -1,0 +1,112 @@
+.clip{
+    width: 91%;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;}
+
+
+.clip_part {
+    width:33.33%; float: left;
+    margin-bottom: 100px
+}
+
+.clip_part .contentArea {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contentArea:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 100px;
+    height: 4px;
+    margin-left: -50px;
+    background: #146ddc;
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+}
+.clip_part .contentArea .imgPart .popup-youtube{
+    width: 100%;
+  display: block;
+  overflow: hidden;
+   border-radius: 15px 15px 0 0;
+}
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    transition: all .3s;
+    transform: scale(1);
+}
+.clip_part .contentArea .imgPart .popup-youtube:hover >img{
+    transform: scale(1.1);
+}
+.clip_part .contentArea p {
+    box-sizing: border-box;
+    padding: 5% 3% 1% 3%;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.clip_part .contentArea p strong{
+display: block;
+font-size: 1.17em;
+}
+
+.clip_part .imgPart:hover img{
+    filter: grayscale(0);
+}
+.clip_part .playBnt img {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transition: all .3s;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+  
+}
+
+
+@media screen and (max-width:786px) {
+
+
+
+    .clip{
+        display: block;}
+
+    .clip_part {
+        width:100%;
+        float: none;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+ 
+}
+
+@media screen and (max-width:480px) {
+    .clip_part .playBnt {
+        width: 95px;
+        height: 95px;
+        margin: -48px 0 0 -48px;
+    }
+    .clip_part .contentArea {
+        width: auto;
+    }
+}

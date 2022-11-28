@@ -1,0 +1,222 @@
+<?
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>투자정보-재무정보</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="stylesheet" href="./common/css/sub4common.css" >
+    <link rel="stylesheet" href="../sub4/css/sub4_content2.css" >
+
+    <script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+      <div class="main">
+        <img src="./common/images/sub4_bg.png" alt="" >
+        <h3>투자정보</h3>
+        <p>Investment Information</p>
+      </div>
+      <div class="subNav">
+        <ul>
+          <li><a href="../sub4/sub4_1.html">관리규정</a></li>
+          <li><a href="../sub4/sub4_2.html" class="current">재무정보</a></li>
+          <li><a href="../sub4/sub4_3.html">사업보고서</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span class="home">home</span>&gt; <span>투자정보</span>&gt;
+            <strong>재무정보</strong>
+          </div>
+          <h2>재무정보</h2>
+        </div>
+        <!-- 본문 컨텐츠 영역 -->
+        <div class="contentArea">
+          <div class="contentInner">
+            
+              <ul class="tapmenu">
+                <li><a class="tab tab1" href="#"><h3>요약연결손익계산서</h3></a></li>
+                <li><a class="tab tab2" href="#"><h3>요약연결재무상태표</h3></a></li>
+                <li><a class="tab tab3" href="#"><h3>요약연결현금흐름표</h3></a></li>
+              </ul>
+            
+          <div class="table1">
+            <table>
+              <caption>요약연결손익계산서</caption>
+              <thead>
+                <tr>
+                  <td>항목</td>
+                  <td>2021년</td>
+                  <td>2020년</td>
+                  <td>2019년</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>매출액</td>
+                  <td>1,687,810</td>
+                  <td>1,619,865</td>
+                  <td>1,480,354</td>
+                </tr>
+                <tr>
+                  <td>영업이익</td>
+                  <td>48,596</td>
+                  <td>84,255</td>
+                  <td>12,536</td>
+                </tr>
+                <tr>
+                  <td>법인세비용 차감전 순이익</td>
+                  <td>126,061</td>
+                  <td>239,892</td>
+                  <td>54,920</td>
+                </tr>
+                <tr>
+                  <td>당기순이익</td>
+                  <td>99,127</td>
+                  <td>190,402</td>
+                  <td>36,612</td>
+                </tr>
+                <tr>
+                  <td>총포괄이익</td>
+                  <td>123,726</td>
+                  <td>213,216</td>
+                  <td>32,797</td>
+                </tr>
+              </tbody>
+            </table>
+            <span>단위 : 백만원</span>
+          </div>
+          <div class="table1">
+            <table>
+              <caption>요약연결재무상태표</caption>
+              <thead>
+                <tr>
+                  <td>항목</td>
+                  <td>2021년 12월</td>
+                  <td>2020년 12월</td>
+                  <td>2019년 12월</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>유동자산</td>
+                  <td>1,224,097</td>
+                  <td>1,195,517</td>
+                  <td>1,116,951</td>
+                </tr>
+                <tr>
+                  <td>비유동자산</td>
+                  <td>1,239,715</td>
+                  <td>1,198,005</td>
+                  <td>1,000,249</td>
+                </tr>
+                <tr class="bg">
+                  <td>자산총계</td>
+                  <td>2,463,812</td>
+                  <td>2,393,522</td>
+                  <td>2,117,200</td>
+                </tr>
+                <tr>
+                  <td>유동부채</td>
+                  <td>431,980</td>
+                  <td>382,175</td>
+                  <td>352,227</td>
+                </tr>
+                <tr>
+                  <td>비유동부채</td>
+                  <td>95,943</td>
+                  <td>164,845</td>
+                  <td>114,982</td>
+                </tr>
+                <tr class="bg">
+                  <td>부채총계</td>
+                  <td>527,923</td>
+                  <td>547,020</td>
+                  <td>467,209</td>
+                </tr>
+                <tr class="bg">
+                  <td>자본총계</td>
+                  <td>1,935,889</td>
+                  <td>1,846,502</td>
+                  <td>1,649,991</td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Unit">단위 : 백만원</span>
+          </div>
+          <div class="table1">
+            <table>
+              <caption>요약연결현금흐름표</caption>
+              <thead>
+                <tr>
+                  <td>항목</td>
+                  <td>2021년 12월</td>
+                  <td>2020년 12월</td>
+                  <td>2019년 12월</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>영업활동으로 인한 현금흐름</td>
+                  <td>99,000</td>
+                  <td>28,830</td>
+                  <td>65,985</td>
+                </tr>
+                <tr>
+                  <td>투자활동으로 인한 현금흐름</td>
+                  <td>(167,143)</td>
+                  <td>57,595</td>
+                  <td>31,605</td>
+                </tr>
+                <tr>
+                  <td>재무활동으로 인한 현금흐름</td>
+                  <td>(36,533)</td>
+                  <td>11,688</td>
+                  <td>(67,012)</td>
+                </tr>
+                <tr>
+                  <td>현금 및 현금성자산의 순증가</td>
+                  <td>(104,676)</td>
+                  <td>98,112</td>
+                  <td>30,579</td>
+                </tr>
+                <tr>
+                  <td>기초의 현금 및 현금성 자산</td>
+                  <td>353,490</td>
+                  <td>274,215</td>
+                  <td>241,296</td>
+                </tr>
+                <tr>
+                  <td>외화표시 현금및현금성자산의 환율변동효과</td>
+                  <td>4,773</td>
+                  <td>(18,838)</td>
+                  <td>2,340</td>
+                </tr>
+                <tr>
+                  <td>기말의 현금 및 현금성 자산</td>
+                  <td>253,588</td>
+                  <td>353,490</td>
+                  <td>274,215</td>
+                </tr>
+              </tbody>
+            </table>
+            <span class="Unit1">단위 : 백만원</span>
+          </div>
+               
+          </div>
+        </div>
+      </article>
+      <? include "../common/sub_footer.html" ?>
+      <script src="./js/acoTap.js"></script>
+  </body>
+</html>

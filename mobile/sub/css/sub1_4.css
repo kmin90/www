@@ -1,0 +1,186 @@
+
+
+.subNav {
+  border-bottom: 1px solid #ccc;
+}
+.subNav ul {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.subNav ul li {
+  color: #666;
+  font-size: 1.143em;
+  width: 25%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.subNav ul li a {
+  display: block;
+  padding: 15px 10px;
+}
+.subNav ul li a.current {
+  display: block;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+.subNav ul li a.current::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5%;
+  background: rgba(53,114,195,.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contentArea{
+    width: 100%;
+    font-size: 1.143em;
+    position: relative;
+}
+.contentArea > p {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2em;
+    word-break: keep-all;
+}
+.contentArea > p span {
+    color: #3672c3;
+    font-weight: 600;
+    font-size: 1.286em;
+    font-family: "Roboto", sans-serif;
+}
+
+.mapInner {
+ width: 100%;
+}
+.mapInner #map {
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+}
+.mapInner .mapAdd { 
+  width: 80%;
+  height: 200px;
+  margin: 30px auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
+  border-radius: 30px;
+  position: relative;
+}
+.mapInner .mapAdd .mapAdd_inner{
+  width: 100%;
+ position: absolute;
+ top: 50%; left: 0;
+ transform: translateY(-50%);
+}
+.mapInner .mapAdd p {
+  word-break: keep-all;
+  font-size:1.143em;
+  line-height: 1.5em;
+}
+.mapInner .mapAdd p:first-child{ 
+  font-size: 1.429em;
+  padding-bottom: 20px;
+}
+.mapInner .mapAdd p span {
+ 
+  color: #00943a;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.mapInner ul {
+  width: 90%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.mapInner ul li {
+  margin-bottom: 100px;
+
+}
+.mapInner ul li dl {
+  width: 100%;
+  line-height: 2em;
+  padding-bottom: 20px;
+}
+.mapInner ul li dl dt {
+  margin-bottom: 20px;
+  font-size: 1.429em;
+  font-weight: 600;
+  color: #00943a;
+}
+
+.mapInner ul li dl dd {
+
+}
+
+.mapInner ul .bus{}
+.mapInner ul .bus dl dd{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.mapInner ul li dl dd span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  /* padding: 0 30px 10px 0; */
+}
+.mapInner ul li dl dd span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #3672c3;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(2) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #00943a;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(3) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #df2727;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(4) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #e5d805;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}

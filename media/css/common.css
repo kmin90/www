@@ -1,0 +1,300 @@
+/* Reset CSS  */
+@font-face {
+    font-family: TorukSC;
+    src: url(../font/TorukscRegular-z8MA1.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+body {font-family: "Noto Sans KR", sans-serif; font-size:16px; color:#fff;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+.vh {font-size: 10vh;}
+.vh2 {font-size: 1.5vh;}
+
+/* 와이드pc 1280px 이상 */
+
+/* 헤더 공통 영역 */
+
+
+
+#wrap{width:100%; overflow: hidden;}
+#headerArea{position:fixed; z-index: 30; height: 80px;
+    background: rgba(0,0,0,.8); left:0; top: 0;
+    width: 100%;}	
+#headerArea	.headerInner{
+    width: 95%; 
+    height: 100%; 
+    margin: 0 auto;
+    overflow: hidden;}
+#headerArea .headerInner h1{
+    float: left; 
+   }
+#headerArea .headerInner h1 a{ 
+    background: url(../images/avatar_logo.png)0 5px no-repeat;
+    text-indent: -999px; overflow: hidden;
+    display: block; width: 200px; height: 69px;
+}	
+#headerArea .headerInner #gnb{
+    float: right;}
+
+#headerArea .headerInner #gnb ul{display: flex;}
+#headerArea .headerInner #gnb ul li h3 a{
+    font-family: TorukSC;
+    font-size: 1.750em;
+    padding: 30px 20px 20px 20px;
+}
+.gradcircle {
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to top, #007dcd, #43ffff);
+    
+}
+
+#headerArea .headerInner #gnb ul li h3 a:hover{
+    background: linear-gradient(to top, #007dcd, #43ffff);
+    color: transparent;
+    -webkit-background-clip: text;
+    }
+
+#headerArea .headerInner #gnb ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+#content h4{
+    font-family: TorukSC;
+ }
+
+
+/* menuBtn */
+
+#headerArea .menu_ham {
+    display: none;
+    float: right;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 60;
+    margin-top: 12px;
+}
+#headerArea .menu_ham span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 24px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+    z-index: 50;
+   
+}
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span, 
+#headerArea.mn_open .menu_ham span::before, 
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(90deg);
+    background: #fff; 
+}
+#headerArea.mn_open .menu_ham span {
+   
+}
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(180deg);
+    top: -10px;
+   
+}
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(180deg);
+    top: 10px;
+}
+
+
+
+
+/* 푸터 공통 영역 */
+
+#footerArea{
+    width: 100%;
+    background: #1d1d1d;
+    position: relative;
+    padding: 2%;
+}
+
+
+#footerArea .footerInner .footer_center{
+    display: flex;
+    align-items: flex-end;
+    width: 96%;
+    justify-content: center;
+}
+#footerArea .footerInner .footer_center>img{
+/* width: 10%; */
+}
+
+
+#footerArea .footerInner div.footer_center div {
+margin-left: 20px;
+text-align: center;
+} 
+
+#footerArea .footerInner div.footer_center div ul{
+    display: flex;
+    justify-content: center;
+
+}
+#footerArea .footerInner div.footer_center div ul li a{
+padding: 5%;
+} 
+#footerArea .footerInner div.footer_center div ul li a img{
+    width: 70%;
+}
+#footerArea .footerInner div.footer_center div p{
+    font-size: 1vh;
+    margin-top: 5px;
+}
+
+
+
+#footerArea .footerInner .topMove{
+    display:block; 
+    position: fixed;
+    right: 1%;
+    transition: all .4s;
+    transform: translateY(0);
+    bottom: 10%;
+    z-index: 50;
+    opacity: .7;
+  }
+
+  #footerArea .footerInner .topMove:hover{
+  transform: translateY(-40px);
+  color: #3672c3;
+  opacity: 1;
+  }
+
+/***** Goliath *****/
+  .grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	max-width: 100%;
+	list-style: none;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+#headerArea .headerInner #gnb{width:50%; height: 346px; display:none;
+    position:absolute; top:80px; right:0; background: rgba(0,0,0,.8); margin: 0;}
+#headerArea .headerInner #gnb ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+#headerArea .menu_ham{display:block;}
+#footerArea .footerInner div.footer_center>img{
+        width: 14%;
+}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+#footerArea .footerInner div.footer_center div ul li a img{
+    width: 60%;
+}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+}

@@ -1,0 +1,103 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  font-size: 1.75em;
+  color: #3672c3;
+  font-weight: 600;
+}
+
+.contentArea .contentInner{
+  width: 100%;
+}
+
+.contentArea .contentInner .textSummary{
+  padding: 20px;
+  width: 945px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.contentArea .contentInner .textSummary p{
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+
+.contentArea .contentInner .textSummary ul{
+overflow: hidden;
+}
+
+.contentArea .contentInner .textSummary ul li{
+  float: left;
+
+}
+
+
+.contentArea .contentInner .textSummary ul li dl dt{
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding: 35px 0;
+  width: 300px;
+  height: 55px;
+  background: #f8f8f8;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .1);
+  margin-bottom: 20px;
+}
+.contentArea .contentInner .textSummary ul li dl .margin{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contentArea .contentInner .textSummary ul li dl dd{
+line-height: 2em;
+}
+
+
+.contentArea .contentInner .textList{
+width: 1200px;
+margin: 0 auto;
+}
+
+.contentArea .contentInner .textList ul .textList1{
+  background: url(../images/content2/list1_bg.png)0 -5% no-repeat;
+}
+.contentArea .contentInner .textList ul .textList2{
+  background: url(../images/content2/list2_bg.png)0 -5% no-repeat;
+}
+.contentArea .contentInner .textList ul .textList3{
+  background: url(../images/content2/list3_bg.png)0 -5% no-repeat;
+}
+.contentArea .contentInner .textList ul li dl{
+  word-break: keep-all;
+  text-align: right;
+  font-size: 1.1em;
+  z-index: 20;
+  width: 750px;
+  height: 470px;
+  margin-left: 442px;
+  margin-bottom: 200px;
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 1px rgb(205 205 205 / 70%);
+  clip-path: polygon(105% -5%, 110% 110%, 27% 105%, 0 0, 0 0);
+}
+
+.contentArea .contentInner .textList ul li dl dt{
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 40px 30px 10px 0 ;
+}
+.contentArea .contentInner .textList ul li dl dd{
+  width: 610px;
+  margin-left: 110px;
+  line-height: 1.7em;
+
+}
+.contentArea .contentInner .textList ul li dl dd p{
+  padding-top: 20px;
+}

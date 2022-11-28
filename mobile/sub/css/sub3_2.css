@@ -1,0 +1,220 @@
+
+
+.subNav {
+  border-bottom: 1px solid #ccc;
+}
+.subNav ul {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.subNav ul li {
+  color: #666;
+  font-size: 1.143em;
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.subNav ul li a {
+  display: block;
+  padding: 15px 10px;
+}
+.subNav ul li a.current {
+  display: block;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+.subNav ul li a.current::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5%;
+  background: rgba(53,114,195,.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.contentArea{
+    font-size: 1.143em;
+}
+.contentArea > p {
+  font-size:1.143em;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2em;
+    color: #3672c3;
+}
+
+.contentArea .contentInner{
+  width: 100%;
+}
+.contentArea .contentInner .content1,
+.contentArea .contentInner .content2,
+.contentArea .contentInner .content3{
+  width: 90%;
+  margin: 50px auto;
+}
+.contentArea h3{
+  text-align: center;
+  font-size: 1.286em;
+  font-weight: 500;
+  color: #3672c3;
+}
+
+.contentArea .contentInner .content1 > p,
+.contentArea .contentInner .content2 > p,
+.contentArea .contentInner .content3 > p{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 30px 0 150px 0;
+  text-align: center;
+  word-break: keep-all;
+  position: relative;
+}
+.contentArea .contentInner .content1 > p::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  background: #3672c3;
+  position: absolute;
+  top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contentArea .contentInner .content2 > p::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  background: #3672c3;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contentArea .contentInner .content3 > p::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  background: #3672c3;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contentArea .contentInner .content1 div p{
+  text-align: justify;
+  margin: 30px 0;
+  
+}
+
+.contentArea .contentInner .content2 ul{
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  
+}
+.contentArea .contentInner .content2 ul li{
+  
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+.contentArea .contentInner .content2 ul li div{
+  width: 96%;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contentArea .contentInner .content2 ul li i{
+  font-size: 5em;
+  color: rgba(54, 114, 195, .1);
+}
+.contentArea .contentInner .content2 ul li div >span{
+  display: block;
+  font-size: 1em;
+  padding-top: 10px;
+}
+.contentArea .contentInner .content2 ul li p{
+  width: 100%;
+  font-size: 1em;
+  position: absolute;
+  bottom: 20px; left: 0;
+}
+.contentArea .contentInner .content2 ul li p>span{
+  display: block;
+  font-weight: 500;
+  color: #3672c3;
+  display: block;
+  font-size: 1.429em;
+  padding-bottom: 10px;
+
+}
+.contentArea .contentInner .content2 p.left{
+  width: 100%;
+  text-align: justify;
+  word-break: normal;
+}
+.contentArea .contentInner .content2 div > p{
+  width: 90%;
+  margin: 0 auto;
+  word-break: keep-all;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+  .contentArea .contentInner .content3 div{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contentArea .contentInner .content3 div ul{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .contentArea .contentInner .content3 div ul li{
+    width: 100%;
+    height:200px;
+    float: left;
+    background: #fff;
+    border-radius: 20px;
+    margin: 15px 5px;
+    box-shadow: -2px -2px 0px 1px rgb(54 114 195);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contentArea .contentInner .content3 div ul li p{
+    width: 90%;
+    text-align: justify;
+    word-break: normal;
+    margin: 0 auto;
+    padding-top: 40px;
+  } 
+  .contentArea .contentInner .content3 div ul li p span{
+    color: #333;
+    display: block;
+    font-size: 1.429rem;
+    font-weight: 500;
+    padding-bottom:20px;
+    z-index: 10;
+  }
+  .contentArea .contentInner .content3 div ul li .num{
+    font-size: 1.286rem;
+    color: #3672c3;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+  }

@@ -1,0 +1,190 @@
+.videoBox{
+   width:100%;
+   height:100%; 
+   overflow:hidden; 
+   position:absolute}
+#videoBG {
+
+  
+}
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%;
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   /* display:none; */
+}
+.down{
+    background-image: url(../images/scrollDown.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 80% 50%;
+    width: 100px;
+    height: 160px;
+    display: block; position: absolute; 
+    left:50%; margin-left: -46px; bottom: 10%;
+    animation:ani 1s infinite  alternate;}
+    @keyframes ani {
+    0% { transform:translateY(5px); opacity:1; color:#fff;}
+    100% { transform:translateY(30px); opacity:0.8; color:#888;}
+}
+/* ::-webkit-scrollbar {
+   display: none;
+} */
+#content{
+   width:100%;
+   background:rgba(0, 0, 0, .8);
+}
+
+
+
+#content section.cast .castNavi,
+#content section.cast .castHuman{
+   width: 95%;
+   margin: 0 auto;
+}
+#content section.cast .human> p,
+#content section.cast .navi> p{
+   margin-top: 100px;
+   text-align: center;
+   padding: 0 5% 5% 5%;
+}
+#content section.cast .human >p span,
+#content section.cast .navi >p span{
+   display: block;
+   font-family: TorukSC;
+   font-size: 5vh;
+   padding-bottom: 5%;
+}
+
+#content .navi{
+   padding-top: 5%;
+   background: url(../images/sub2_bg2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+}
+#content .human{
+   background: url(../images/sub2_bg3.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   padding-top: 50px;
+}
+
+
+  
+#content section.cast .castNavi ul,
+#content section.cast .castHuman ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#content section.cast .castNavi ul li,
+#content section.cast .castHuman ul li{
+padding: 10% 0;
+width: calc(25% - 0.8333rem);
+text-align: center;
+transition: transform .3s;
+}
+#content section.cast .castNavi ul li:hover,
+#content section.cast .castHuman ul li:hover{
+border-color: #fff;
+animation: character_item .3s;
+transform: translateY(-40px);
+}
+#content section.cast .castNavi ul li img,
+#content section.cast .castHuman ul li img{
+   width: 100%;
+   transition:all .3s;
+   box-shadow: 3px 3px 0px 1px #fff;
+   border-radius: 20% 10%;
+}
+#content section.cast .castNavi ul li:hover img,
+#content section.cast .castHuman ul li:hover img{
+border-radius: 10% 20%;
+box-shadow: -3px -3px 0px 1px #146ddc;
+
+}
+
+#content section.cast .castNavi ul li a,
+#content section.cast .castHuman ul li a{
+display: block;
+position: relative;
+
+}
+#content section.cast .castNavi ul li strong,
+#content section.cast .castHuman ul li strong{
+   color: #fff;
+    display: block;
+    font-family: TorukSC;
+    font-size: 2.5vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5% 0 2% 0;
+    
+}
+
+
+#content section.cast .castNavi ul li p,
+#content section.cast .castHuman ul li p {
+   color: #fff;
+    padding: 0.83333rem 0 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20%;
+   }
+
+
+#content section.cast .castNavi ul li::after,
+#content section.cast .castHuman ul li::after{
+   content: '';
+   display: block;
+   border-bottom: 10px solid #fff;
+   transition: all .3s;
+   }
+#content section.cast .castNavi ul li:hover:after,
+#content section.cast .castHuman ul li:hover:after{
+border-color: #146ddc;
+}
+      
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+#content section.cast .castNavi ul li,
+#content section.cast .castHuman ul li{
+   width: calc(50% - 0.7rem);}
+ 
+ 
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+   #content section.cast .castNavi ul li,
+   #content section.cast .castHuman ul li{
+      width: calc(100%);}
+}

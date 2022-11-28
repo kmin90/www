@@ -1,0 +1,312 @@
+<?
+session_start();
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+<title>유한양행</title>
+
+<link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/sub3_2.css">
+<script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+<script src="../js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+ <div id="wrap">
+    <header id="headerArea">
+       <div class="header_top">
+         <h1><a href="../index.html">
+          유한양행로고
+         </a></h1>
+         <a href="#" class="menu_ham openBtn"><span>햄버거</span></a>
+         <div class="modal_box"></div>
+       </div>
+        <nav id="gnb">
+          
+           <h2 class="hidden">글로벌네비게이션영역</h2>
+          <a href="../index.html"><span class="yhlogo"></span></a>
+
+           <section class="productSearch">
+            <h3 class="hidden">제품검색</h3>
+            <div>
+              <form>
+                <label for="searchIn" class="hidden">제품검색</label>
+                <input
+                  type="text"
+                  name="searchIn"
+                  id="searchIn"
+                  autocomplete="off"
+                  placeholder="제품을 검색해보세요"
+                />
+                <input type="submit" name="btn" id="btn" value="검색버튼">
+              </form>
+            </div>
+          </section>
+
+           <ul class="mainMenu">  
+            <li class="depth1"><h3><a href="#">기업소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+                <ul>
+                  <li><a href="../sub/sub1_1.html">회사개요</a></li>
+                  <li><a href="../sub/sub1_2.html">인사말</a></li>
+                  <li><a href="../sub/sub1_3.html">회사연혁</a></li>
+                  <li><a href="../sub/sub1_4.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="depth1"><h3><a href="#">제품소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub2_1.html">제품소개</a></li>
+                  <li><a href="../sub/sub2_2.html">브랜드</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">윤리경영<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub3_1.html">준법경영</a></li>
+                  <li><a href="../sub/sub3_2.html">안전경영</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-plus"></i></span></a></h3>
+            <ul>
+              <li><a href="../sub/sub4_1.html">뉴스&amp;공지</a></li>
+              <li><a href="../sub/sub4_2.html">자주묻는질문</a></li>
+           </ul>
+          </li>
+        </ul>
+
+        <div class="side">
+          <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+          //$userid=$_SESSION['userid']; 정석 
+          
+              if(!$userid){
+       
+          ?>
+          <ul>
+            <li class="login"><a href="./login/login_form.php">로그인</a></li>
+            <li class="join"><a href="./member/join.html">회원가입</a></li>
+          </ul>
+
+      <?
+        }
+        else
+        {
+      ?>
+
+          <ul>
+            <li class="logout"><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./member/member_form_modify.php">정보수정</a></li>
+          </ul>
+      <?
+        }
+      ?>
+        
+      </div>
+    </nav>
+
+
+
+  </header>
+    <div class="main">
+        <img src="./images/sub3_bg.png" width="100%" alt="윤리경영배경이미지">
+       <div class="main_content">
+         <h3>윤리경영</h3>
+         <p>Ethical Management</p>
+       </div>
+    </div>
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub3_1.html">준법경영</a></li>
+        <li><a href="./sub3_2.html" class="current">안전경영</a></li>
+      </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+        <h4>안전경영</h4>
+        <div class="contentArea">
+          <div class="contentInner">
+            <div class="content1">
+              <h3>안전 보건 경영 시스템</h3>
+              <p>오창공장은 임직원의 안전보건을 최우선으로 하는 안전보건 경영 방침을 수립하고
+                체계적인 안전문화 정착을 위해 안전보건경영시스템(ISO45001)을 운영하고 있습니다. </p>
+                <div>
+                  <img src="./images/sub3_img.jpg" width="100%" alt="안전보건경영시스템이미지">
+                  <p>현장의 목소리를 적극 반영하여 위험을 발굴하고 개선하기 위한 잠재위험발굴 활동과, 
+                    공정별 위험성 평가, 취급물질 MSDS 교육, 안전작업허가제도 운영 등 사업장 에서 발생할 
+                    수 있는 안전사고를 사전 예방하기 위해 다각적인 활동을 하고 있습니다.</p>
+                    <p>지속적인 안전보건경영활동으로 안전하고 쾌적한 사업장을 만들기 위해 노력하고 있습니다.</p>
+                </div>
+            </div>
+            <div class="content2">
+              <h3>무재해 추진현황</h3>
+              <p>오창공장은 1999년부터 무재해 운동을 시작하여 2017년 8월 무재해 13배수를
+                달성하여 한국산업안전보건공단으로부터 인증을 받았습니다. </p>
+              <div>
+                <ul>
+                  <li>
+                    <div>
+                    <span>무재해</span>
+                    <p><span class="count1"></span>배수 달성</p>
+                    <i class="fa-sharp fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  </li>
+                  <li>
+                    <div>
+                      <span>무재해</span>
+                      <p><span class="count2"></span>+320일</p>
+                      <i class="fa-sharp fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                  </li>
+                  <li>
+                   <div>
+                     <span>무재해</span>
+                     <p><span class="count3"></span>년</p>
+                     <i class="fa-sharp fa-solid fa-arrow-trend-up"></i>
+                   </div>
+                  </li>
+                </ul>
+                <p class="left">2019년부터는 한국산업안전보건공단의 무재해 인증 사업이 종료되어 현재는 사업장 
+                  자율로 운영하고 있으며, 2021년 7월에 무재해 16배수를 달성하게 되었습니다.
+                  이는 약 22년의 대기록으로 안전한 사업장을 만들고자 한 모든 직원의 실천과 노력의 결실입니다.</p>
+              </div>
+            </div>
+            <div class="content3">
+              <h3>안전 보건 경영 시스템</h3>
+              <p>유한양행은 사업장 내에 임직원 안전을 최우선으로 하며 안전하고 청결한 작업장을 갖추기 
+                위해 다양한 안전 보건 활동을 수행하고 있습니다. </p>
+                <div>
+                  <ul>
+                    <li>
+                        <span class="num">1.</span>
+                       <p> <span>산업안전 보건위원회</span>분기별 1회 이상 산업안전보건 위원회를 실시하여 노사가 함께 심의· 의결을 통해 작업자의 
+                        위험 또는 건강 장애 예방</p>
+                     
+                    </li>
+                    <li>
+                      
+                     <span class="num">2.</span>
+                        <p> <span>관리감독자 교육 강화</span>
+                        각 부서별 관리감독자를 대상으로 연간 16시간 이상
+                        안전교육으로 안전직무능력향상
+                      </p>
+                    </li>
+                    <li>
+                      
+                      <span class="num">3.</span>
+                       <p> <span>안전 점검, 유해위험요소 제거</span>
+                        공사업체 작업 시 안전교육 및 안전점검을 통한 유해 위험요인 제거
+                      </p>
+                    </li>
+                    <li>
+                      
+                        <span class="num">4.</span>
+                       <p> <span>작업환경측정</span>
+                        작업장의 시설 ∙ 설비를 개선 및 쾌적한 작업 환경 조성을 위한 연간 2회 작업환경 측정
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+      </article>
+       
+
+
+
+
+    <footer id="footerArea">
+      <div class="footerInner">
+          <a class="topMove" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+          
+          <div class="family">
+            <a class="arrow" href="#">
+              <span>Famliy Site<i class="fas fa-chevron-up"></i></span>
+            </a>
+            
+            <ul class="FList">
+              <li>
+                <a href="#" title="유한킴벌리사이트가새창에열림" target="_blank">유한킴벌리</a>
+              </li>
+              <li>
+                <a href="#" title="유한크로락스사이트가새창에열림" target="_blank">유한크로락스</a>
+              </li>
+              <li>
+                <a href="#" title="유한화학사이트가새창에열림" target="_blank">유한화학</a>
+              </li>
+              <li>
+                <a href="#" title="유한메디카사이트가새창에열림" target="_blank">유한메디카</a>
+              </li>
+              <li>
+                <a href="#" title="한국얀센사이트가새창에열림" target="_blank">한국얀센</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footerLink">
+
+            <ul>
+              <li><a href="#">사이트이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영·관리 방침</a></li>
+              <li><a href="#">사이트이용</a></li>
+              <li><a href="#">도움말</a></li>
+            </ul>
+    
+            <div class="add">
+              <address>
+                <span>주소 서울시 동작구 노량진로 74</span>
+                <span>문의전화 02)828-0181</span><span>FAX 02)828-0050</span
+                >
+                <span>대표자 조욱제</span
+                ><span>사업자등록번호 118-81-00601</span>
+              </address>
+              <p>COPYRIGHT&copy; 2013 YUHAN. ALL RIGHT RESERVED</p>
+            </div>
+
+          </div>
+    
+          
+        </div>
+  </footer>
+
+  </div>
+ 
+ <script src="../js/jquery-1.12.4.min.js"></script>
+ <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="../js/main.js"></script>
+ <script src="./js/count.js"></script>
+
+ 
+ 
+</body>
+</html>

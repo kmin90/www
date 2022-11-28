@@ -1,0 +1,84 @@
+<?
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업소개-오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content5.css">
+
+    <script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dc6af3e6ca05ba7b66bd4030c4e8e4aa"></script>
+
+    <script src="./js/map.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+      <div class="main">
+        <img src="./common/images/sub1_main.png" alt="">
+        <h3>기업소개</h3>
+        <p>Corporate Introduction</p>
+      </div>
+      <div class="subNav">
+        <ul>
+          <li><a href="../sub1/sub1_1.html">회사개요</a></li>
+          <li><a href="../sub1/sub1_2.html">CEO 인사말</a></li>
+          <li><a href="../sub1/sub1_3.html">회사연혁</a></li>
+          <li><a href="../sub1/sub1_4.html">기업이념</a></li>
+          <li><a href="../sub1/sub1_5.html" class="current">오시는길</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span class="home">home</span>&gt; <span>기업소개</span>&gt;
+            <strong>오시는길</strong>
+          </div>
+          <h2>오시는길</h2>
+        </div>
+        <!-- 본문 컨텐츠 영역 -->
+        <div class="contentArea">
+          <div class="mapInner">
+            <div id="map"></div>
+              <div class="mapAdd">
+                <p>서울특별시 동작구 노량진로 74 (대방동)</p>
+                <p><span>TEL</span>02-828-0181<span>FAX</span>02-828-0300</p>
+              </div>
+            
+            <ul>
+              <li class="subway">
+                <dl>
+                  <dt>지하철로 오시는 길</dt>
+                  <dd>1호선 대방역 2번 출구 하차 노량진 방향 600m</dd>
+                  <dd>9호선 노량진역 6번 출구 하차 대방역 방향 500m</dd>
+                </dl>
+              </li>
+              <li class="bus">
+                <dl>
+                  <dt>버스로 오시는 길</dt>
+                  <dd>
+                    <span>간선</span>150, 605, 640, 641, 650, 462, 507, 360
+                  </dd>
+                  <dd><span>지선</span>6515, 5531, 6211, 6411</dd>
+                  <dd><span>광역</span>9408</dd>
+                  <dd>
+                    <span>마을</span>동작13-1, 동작01, 동작03, 동작 08, 동작13
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

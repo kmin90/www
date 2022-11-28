@@ -1,0 +1,203 @@
+
+
+.subNav {
+  border-bottom: 1px solid #ccc;
+}
+.subNav ul {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.subNav ul li {
+  color: #666;
+  font-size: 1.143em;
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.subNav ul li a {
+  display: block;
+  padding: 15px 10px;
+}
+.subNav ul li a.current {
+  display: block;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+.subNav ul li a.current::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5%;
+  background: rgba(53,114,195,.4);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.contentArea{
+    font-size: 1.143em;
+}
+.contentArea > p {
+  font-size:1.143em;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2em;
+    color: #3672c3;
+}
+
+.contentArea .contentInner{
+  width: 100%;
+}
+.contentArea .contentInner section{
+width: 95%;
+margin: 0 auto;
+}
+.contentArea .contentInner section form{
+  position: relative;
+  text-align: center;
+  }
+
+.contentArea .contentInner section form #searchIn{
+  font-size: 1rem;
+  width: 85%;
+  padding: 12px 20px;
+  border: 2px solid #00943a;
+  outline: none;
+}
+.contentArea .contentInner section form #btn{
+  width: 45px;
+  height: 45px;
+  text-indent: -999px;
+  overflow: hidden;
+  border: 0;
+  background: url(../images/sub2/btn.png) no-repeat;
+  position: absolute; top: 7px; right: 5%;
+
+}
+.contentArea .contentInner section dl{
+  width: 90%;
+  margin: 5px auto;
+  overflow: hidden;
+}
+.contentArea .contentInner section dl dt{
+  padding: 0 20px 20px 0;
+  font-size: 1.143em;
+  font-weight: 600;
+  float: left;}
+.contentArea .contentInner section dl dd{
+  padding:5px 10px 10px 0;
+
+  font-size: 1rem;
+  float: left;}
+  .contentArea .contentInner .productInner{
+    width: 100%;
+  }
+
+  .contentArea .contentInner .productInner ul.productNav{
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  .contentArea .contentInner .productInner ul.productNav li{
+    width: 33.33%;
+    float: left;
+    
+  }
+
+  .contentArea .contentInner .productInner ul.productNav li a{
+    display: block;
+    padding: 10px 0 10px 0;
+    margin: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  .contentArea .contentInner .productInner ul.productNav li a span{
+    width: 100%;
+    display: inline;
+    margin-top: 10px;
+  }
+  .contentArea .contentInner .productInner ul.productNav li a img{
+display: block;
+width: 50px;
+margin: 0 auto;
+  }
+
+.contentArea .contentInner .product1{
+  width: 100%;
+}
+
+.contentArea .contentInner .product1 ul{
+  width: 90%;
+  margin: 50px auto;
+ display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 1rem;
+
+  grid-template-areas: 
+   'a b'
+   'c d'
+   'e f';
+}
+.contentArea .contentInner .product1 ul li{
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contentArea .contentInner .product1 ul li a .image{
+  width: 150px;
+  height: 65%;
+  object-fit: contain;
+  object-position: center;
+ }
+ .image1{
+   grid-area: a;
+ }
+ .image2{
+   grid-area: b;
+ }
+ .image3{
+   grid-area: c;
+ }
+ .image4{
+   grid-area: d;
+ }
+ .image5{
+   grid-area: e;
+ }
+ .image6{
+   grid-area: f;
+ }
+ .contentArea .contentInner .product1 ul li a{
+  
+ }
+ .contentArea .contentInner .product1 ul li a dl{
+  width: 100%;
+  height: 105px;
+  background: #f8f8f8;
+ }
+
+ .contentArea .contentInner .product1 ul li a dl dt{
+  color: #3672c3;
+  padding: 10px 0;
+  font-size: 1.143em;
+  font-weight: 600;
+ }
+ .contentArea .contentInner .product1 ul li a dl dd{
+  font-weight: 500;
+ }
+ .contentArea .contentInner .product1 ul li a dl dd.fColor{
+ color: #666;
+ font-size: 1rem;
+ margin-bottom: 5px;
+ }

@@ -1,0 +1,152 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  font-size: 1.75em;
+  color: #3672c3;
+  font-weight: 600;
+}
+
+.contentArea .contentInner{
+  width: 100%;
+}
+
+.contentArea .contentInner section{
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  position: relative;
+}
+.contentArea .contentInner section p{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: #fff;
+ box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+ z-index: 10;
+ position: absolute;
+ top: 377px;
+ left: 443px;
+}
+.contentArea .contentInner section p img{
+  width: 150px;
+  margin: 86px 0 0 24px;
+}
+.contentArea .contentInner section ul{
+  overflow: hidden;
+}
+.contentArea .contentInner section ul li{
+  text-align: center;
+
+}
+.contentArea .contentInner section ul li dl{
+  overflow: hidden; 
+  width: 450px;
+  margin: 0 auto;
+  
+}
+.contentArea .contentInner section ul li dl dt{
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 40px 0;
+  position: relative;
+}
+.contentArea .contentInner section ul li dl dt::after{
+  content: ""; display: block;
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+  transition: all .3s ease-out;
+  position: absolute;
+  top: 90px; left: 0;
+  transform: scaleX(0);
+}
+.contentArea .contentInner section ul .parList1:hover dt:after{
+  transform: scaleX(1);
+  background: #e02121;
+}
+.contentArea .contentInner section ul .parList2:hover dt:after{
+  transform: scaleX(1);
+  background: #00943a;
+}
+.contentArea .contentInner section ul .parList3:hover dt:after{
+  transform: scaleX(1);
+  background: #3672c3;
+}
+.contentArea .contentInner section ul .parList4:hover dt:after{
+  transform: scaleX(1);
+  background: #c39a0a;
+}
+.contentArea .contentInner section ul li dl dd{
+  width: 200px;
+  height: 80px;
+  float: left;
+}
+
+.contentArea .contentInner section ul .parList1{
+  width: 520px;
+  height: 480px;
+  border-radius: 0 50px 0 50px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px 1px rgba(102, 102, 102, .2);
+  float: left;
+  margin-bottom: 55px;
+
+}
+.contentArea .contentInner section ul .parList1 dd{
+  padding: 20px 10px;
+}
+.contentArea .contentInner section ul .parList1:hover{
+  box-shadow: 3px 3px 5px 1px rgba(224, 33, 33, .3);
+}
+
+.contentArea .contentInner section ul .parList2{
+  width: 520px;
+  height: 480px;
+  border-radius: 50px 0 50px 0;
+  border: 1px solid #ccc;
+  box-shadow: -1px 1px 5px 1px rgba(102, 102, 102, .2);
+  float: right;
+  margin-bottom: 55px;
+}
+.contentArea .contentInner section ul .parList2 dd{
+  padding:10px;
+}
+.contentArea .contentInner section ul .parList2 dd:nth-child(8) img{
+  margin-left:220px;
+}
+.contentArea .contentInner section ul .parList2:hover{
+  box-shadow: -3px 3px 5px 1px rgba(0, 148, 58, .3);
+}
+.contentArea .contentInner section ul .parList3{
+  width: 520px;
+  height: 750px;
+  border-radius: 50px 0 50px 0;
+  border: 1px solid #ccc;
+  box-shadow: 1px -1px 5px 1px rgba(102, 102, 102, .2);
+  float: left;
+  
+}
+.contentArea .contentInner section ul .parList3 dd{
+  padding: 5px 10px;
+}
+.contentArea .contentInner section ul .parList3:hover{
+  box-shadow: 3px -3px 5px 1px rgba(54, 114, 195, .3);
+}
+
+.contentArea .contentInner section ul .parList4{
+  width: 520px;
+  height: 750px;
+  border-radius: 0 50px 0 50px;
+  border: 1px solid #ccc;
+  box-shadow: -1px -1px 5px 1px rgba(102, 102, 102, .2);
+  float: right;
+}
+.contentArea .contentInner section ul .parList4 dd{
+  padding: 5px 10px;
+}
+.contentArea .contentInner section ul .parList4:hover{
+  box-shadow: -3px -3px 5px 1px rgba(195, 154, 10, .3);
+}
+

@@ -1,0 +1,334 @@
+<?
+session_start();
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+<title>유한양행</title>
+
+<link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/sub2_1.css">
+<script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+<script src="../js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+ <div id="wrap">
+    <header id="headerArea">
+       <div class="header_top">
+         <h1><a href="../index.html">
+          유한양행로고
+         </a></h1>
+         <a href="#" class="menu_ham openBtn"><span>햄버거</span></a>
+         <div class="modal_box"></div>
+       </div>
+        <nav id="gnb">
+          
+           <h2 class="hidden">글로벌네비게이션영역</h2>
+          <a href="../index.html"><span class="yhlogo"></span></a>
+
+           <section class="productSearch">
+            <h3 class="hidden">제품검색</h3>
+            <div>
+              <form>
+                <label for="searchIn" class="hidden">제품검색</label>
+                <input
+                  type="text"
+                  name="searchIn"
+                  id="searchIn"
+                  autocomplete="off"
+                  placeholder="제품을 검색해보세요"
+                />
+                <input type="submit" name="btn" id="btn" value="검색버튼">
+              </form>
+            </div>
+          </section>
+
+           <ul class="mainMenu">  
+            <li class="depth1"><h3><a href="#">기업소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+                <ul>
+                  <li><a href="../sub/sub1_1.html">회사개요</a></li>
+                  <li><a href="../sub/sub1_2.html">인사말</a></li>
+                  <li><a href="../sub/sub1_3.html">회사연혁</a></li>
+                  <li><a href="../sub/sub1_4.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="depth1"><h3><a href="#">제품소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub2_1.html">제품소개</a></li>
+                  <li><a href="../sub/sub2_2.html">브랜드</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">윤리경영<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub3_1.html">준법경영</a></li>
+                  <li><a href="../sub/sub3_2.html">안전경영</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-plus"></i></span></a></h3>
+            <ul>
+              <li><a href="../sub/sub4_1.html">뉴스&amp;공지</a></li>
+              <li><a href="../sub/sub4_2.html">자주묻는질문</a></li>
+           </ul>
+          </li>
+        </ul>
+
+        <div class="side">
+          <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+          //$userid=$_SESSION['userid']; 정석 
+          
+              if(!$userid){
+       
+          ?>
+          <ul>
+            <li class="login"><a href="./login/login_form.php">로그인</a></li>
+            <li class="join"><a href="./member/join.html">회원가입</a></li>
+          </ul>
+
+      <?
+        }
+        else
+        {
+      ?>
+
+          <ul>
+            <li class="logout"><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./member/member_form_modify.php">정보수정</a></li>
+          </ul>
+      <?
+        }
+      ?>
+        
+      </div>
+    </nav>
+
+
+
+  </header>
+    <div class="main">
+        <img src="./images/sub2_bg.png" width="100%" alt="제품소개배경이미지">
+       <div class="main_content">
+         <h3>제품소개</h3>
+         <p>Product Descriptions</p>
+       </div>
+    </div>
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub2_1.html" class="current">제품소개</a></li>
+        <li><a href="./sub2_2.html">브랜드</a></li>
+      </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+        <h4>제품소개</h4>
+        <div class="contentArea">
+          <p>
+            유한양행의 다양한 제품들을 찾아 볼 수 있습니다.
+          </p>
+          <div class="contentInner">
+            <section>
+                <h3 class="hidden">제품검색</h3>
+                <div>
+                  <form>
+                    <label for="searchIn" class="hidden">제품검색</label>
+                    <input
+                      type="text"
+                      name="searchIn"
+                      id="searchIn"
+                      autocomplete="off"
+                      placeholder="제품명으로 검색하실 수 있습니다.">
+                    <input type="submit" name="btn" id="btn" value="검색버튼">
+                  </form>
+                  <dl>
+                    <dt>인기검색어</dt>
+                    <dd><a href="#">&#35;비타민</a></dd>
+                    <dd><a href="#">&#35;소화제</a></dd>
+                    <dd><a href="#">&#35;생리통</a></dd>
+                    <dd><a href="#">&#35;두통</a></dd>
+                    <dd><a href="#">&#35;구내염</a></dd>
+                  </dl>
+                </div>
+              </section>
+              
+              <div class="productInner">
+                <ul class="productNav">
+                    <li><a href="#">
+                        <img src="./images/sub2/navIcon1.png" alt="전문의약품">
+                        <span>전문의약품</span></a></li>
+                    <li><a href="#">
+                        <img src="./images/sub2/navIcon2.png" alt="일반의약품">
+                        <span>일반의약품</span></a></li>
+                    <li><a href="#">
+                        <img src="./images/sub2/navIcon3.png" alt="건강기능식품">
+                        <span>건강기능식품</span></a></li>
+                </ul>
+                <div class="product1">
+                    <h3><a href="#" class="hidden">전문의약품</a></h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_1.jpg" alt="레코미드정" class="image image1"> 
+                                <dl>
+                                    <dt>레코미드</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>소화기관용약</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_2.jpg"  alt="자디앙정" class="image image2">
+                                <dl>
+                                    <dt>자디앙정</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>대사성질환치료제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_3.jpg"  alt="아나그레" class="image image3">
+                                <dl>
+                                    <dt>아나그레</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>항암제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_4.png"  alt="듀오웰플러스" class="image image4">
+                                <dl>
+                                    <dt>듀오웰플러스</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>순환기용약</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_5.jpg"  alt="나자케어" class="image image5">
+                                <dl>
+                                    <dt>나자케어</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>호흡기/알레르기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sub2/product_6.jpg"  alt="페니라민" class="image image6">
+                                <dl>
+                                    <dt>페니라민</dt>
+                                    <dd class="fColor">전문의약품</dd>
+                                    <dd>호흡기/알레르기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>            
+                </div>
+              </div>
+          
+            
+        </div>
+    </div>
+    </article>
+
+
+
+
+    <footer id="footerArea">
+      <div class="footerInner">
+          <a class="topMove" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+          
+          <div class="family">
+            <a class="arrow" href="#">
+              <span>Famliy Site<i class="fas fa-chevron-up"></i></span>
+            </a>
+            
+            <ul class="FList">
+              <li>
+                <a href="#" title="유한킴벌리사이트가새창에열림" target="_blank">유한킴벌리</a>
+              </li>
+              <li>
+                <a href="#" title="유한크로락스사이트가새창에열림" target="_blank">유한크로락스</a>
+              </li>
+              <li>
+                <a href="#" title="유한화학사이트가새창에열림" target="_blank">유한화학</a>
+              </li>
+              <li>
+                <a href="#" title="유한메디카사이트가새창에열림" target="_blank">유한메디카</a>
+              </li>
+              <li>
+                <a href="#" title="한국얀센사이트가새창에열림" target="_blank">한국얀센</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footerLink">
+
+            <ul>
+              <li><a href="#">사이트이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영·관리 방침</a></li>
+              <li><a href="#">사이트이용</a></li>
+              <li><a href="#">도움말</a></li>
+            </ul>
+    
+            <div class="add">
+              <address>
+                <span>주소 서울시 동작구 노량진로 74</span>
+                <span>문의전화 02)828-0181</span><span>FAX 02)828-0050</span
+                >
+                <span>대표자 조욱제</span
+                ><span>사업자등록번호 118-81-00601</span>
+              </address>
+              <p>COPYRIGHT&copy; 2013 YUHAN. ALL RIGHT RESERVED</p>
+            </div>
+
+          </div>
+    
+          
+        </div>
+  </footer>
+
+  </div>
+ 
+ <script src="../js/jquery-1.12.4.min.js"></script>
+ <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="../js/main.js"></script>
+
+ 
+ 
+</body>
+</html>

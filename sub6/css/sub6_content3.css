@@ -1,0 +1,139 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 100%;
+    margin: 0 auto;
+  }
+ 
+form{
+  width: 1000px;
+  margin: 200px auto;
+}
+form h3{
+  text-align: center;
+  font-size: 1.75em;
+}
+form p{
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px 10px 5px 20px;
+  display: inline-block;
+  background: #f95162;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 470px;
+  position: relative;
+}
+form p::after{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+form table{
+  width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+form table tr{
+  width: 45%;
+  float: left;
+  margin: 20px 5px;
+  margin-left: 40px;
+  position: relative;
+}
+
+form table tr input{padding: 5px;
+border: 0;}
+
+
+form table tr:nth-child(5){
+   width: 100%; 
+}
+form table tr #user_name{ width: 200px;}
+form table tr #hp1,
+form table tr #hp2,
+form table tr #hp3{width: 50px; padding-left: 10px;}
+form table tr td #Inquiry,
+form table tr td #age
+{width: 100px; height: 30px;}
+form table tr td #email1{width: 100px;}
+form table tr td #email2{width: 150px;}
+
+form table tr th{
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;}
+form table tr #InquiryTitle{width: 380px;}
+form table tr #InquiryCon{width: 900px; height: 200px;}
+form table tr:nth-child(1)::after,
+form table tr:nth-child(3)::after,
+form table tr:nth-child(4)::after,
+form table tr:nth-child(5)::after,
+form table tr:nth-child(6)::after{
+  content: '';
+  display: block;
+  width: 400px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  top: 70px; left: 0;
+}
+
+form table tr:nth-child(9){
+  width: 100%;
+  padding-left: 380px;
+}
+
+form table tr #btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3672c3;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.175em;
+  font-weight: 500;
+  margin-left: 420px;
+}
+form table tr th{position: relative;}
+form table tr th::after{
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #f95162;
+  position: absolute;
+  top: 2px;
+  left: -9px;
+}
+
+form table tr:nth-child(5) th:after,
+  form table tr:nth-child(9) th:after{
+  display: none;
+} 
+
+
+
+
+
+
+
+
+

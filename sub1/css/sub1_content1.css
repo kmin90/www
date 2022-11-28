@@ -1,0 +1,90 @@
+/* 회사개요 본문 영역 */
+
+.contentArea > p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 150px 0;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+.contentArea > p span {
+  font-size: 1.35em;
+  color: #3672c3;
+  font-weight: 600;
+}
+.contentArea .contentInner {
+  background: url(../images/content1/sub1_con2.png) 0 500px no-repeat;
+}
+.contentArea div {
+  font-size: 1.1em;
+  width: 2000px;
+  overflow: hidden;
+}
+.contentArea .contentInner div img {
+  float: left;
+}
+.contentArea .contentInner div .text1 {
+  width: 600px;
+  padding: 120px 0;
+}
+
+.contentArea .contentInner div .textBold {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.contentArea .contentInner div p {
+  word-break: keep-all;
+  padding-left: 100px;
+  line-height: 2em;
+}
+.contentArea .contentInner div p strong {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #00943a;
+}
+
+.contentArea .contentInner div .text2 {
+  text-align: right;
+  width: 600px;
+  padding: 110px 0 107px 401px;
+}
+.contentArea .contentInner div .text2 .textBold {
+  margin-top: 20px;
+}
+
+.contentArea .text3 {
+  position: relative;
+  width: 2000px;
+  height: 538px;
+}
+.contentArea .text3 ul {
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+  color: #fff;
+  width: 600px;
+  font-size: 1.2em;
+  position: absolute;
+  top: 70px;
+  left: 485px;
+}
+
+.contentArea .text3 ul li {
+  border-bottom: 1px solid #fff;
+  padding: 15px 80px 15px 80px;
+}
+.contentArea .text3 ul li:nth-child(6) {
+  border: 0;
+}
+.contentArea .text3 ul li dt {
+  height: 0;
+  text-align: left;
+}
+.contentArea .text3 ul li dd {
+  text-align: right;
+}
+
+.contentArea .lastText {
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 1.8em;
+}

@@ -1,0 +1,144 @@
+<?
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원-온라인상담</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="../sub6/css/sub6_content3.css">
+
+    <script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+      <div class="main">
+        <img src="./common/images/sub6_bg.png" alt="">
+        <h3>고객지원</h3>
+        <p>Customer Support</p>
+      </div>
+      <div class="subNav">
+        <ul>
+          <li><a href="../sub6/greet/list.php">뉴스&공지</a></li>
+          <li><a href="../sub6/sub6_2.html">자주묻는질문</a></li>
+          <li><a href="../sub6/sub6_3.html" class="current">온라인상담</a></li>
+        </ul>
+      </div>
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span class="home">home</span>&gt; <span>고객지원</span>&gt;
+            <strong>온라인상담</strong>
+          </div>
+          <h2>온라인상담</h2>
+        </div>
+        <!-- 본문 컨텐츠 영역 -->
+        <div class="contentArea">
+          <div class="contentInner">
+            
+            <form method="post" action="mail.php">
+              <h3>문의등록</h3>
+              <p>필수</p>
+          
+              <table>
+                <caption class="hidden">문의등록</caption>
+                <tr>
+                    <th scope="row"><label for="user_name">이름</label></th>
+                    <td><input type="text" id="user_name" name="user_name" size="18" maxlength="36"  placeholder="성함을 입력해주세요"></td>
+                </tr>
+                <tr>
+                  <th><label for="age">연령대</label></th>
+                  <td> 
+                    <select name="age" id="age">
+                      <option value="">10대</option>
+                      <option value="1">20대</option>
+                      <option value="2">30대</option>
+                      <option value="3">40대</option>
+                      <option value="4">50대</option>
+                      <option value="5">60대</option>
+                      <option value="6">70대</option>
+                      <option value="7">80대</option>
+                      <option value="8">90대</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><label for="gender">성별</label></th>
+                  <td>
+                    <input type="radio" name="gender" id="gender_M" checked value="m">
+                    <label for="gender_M">남자</label>
+                    <input type="radio" name="gender" id="gender_W">
+                    <label for="gender_W">여자</label>
+                  </td>
+              </tr>
+              <tr>
+                <th><label for="email1">이메일</label></th>
+                <td>
+                  <label class="hidden" for="email1">이메일의 아이디 입력</label>
+                  <input type="text" name="email1" id="email1">
+                  @
+                  <label class="hidden" for="email2">메일주소입력</label>
+                  <input type="text" name="email2" id="email2">
+                </td>
+              </tr>
+              <tr>
+                <th><label for="hp">핸드폰번호</label></th>
+                <td>
+                  <label class="hidden" for="hp1">앞세자리선택</label>
+                  <input type="text" name="hp1" id="hp1">
+                  -<label class="hidden" for="hp2">중간4자리번호입력</label>
+                  <input type="text" name="hp2" id="hp2">
+                  -<label class="hidden" for="hp3">마지막4자리번호입력</label>
+                  <input type="text" name="hp3" id="hp3">
+                </td>
+              </tr>
+              
+              <tr>
+                <th><label for="InquiryTitle">문의제목</label></th>
+                <td>
+                  <input name="InquiryTitle" id="InquiryTitle" cols="100" placeholder="제목을 입력해주세요.">
+                </td>
+            </tr>
+
+            <tr>
+              <th scope="row"><label for="Inquiry">문의구분</label></th>
+              <td>
+                <select name="Inquiry" id="Inquiry">
+                  <option value="">기업문의</option>
+                  <option value="1">제품문의</option>
+                  <option value="2">제안</option>
+                  <option value="3">기타</option>
+                </select>
+            </tr>
+              <tr>
+                <th scope="row"><label for="InquiryCon">문의내용</label></th>
+                <td>
+                  <textarea name="InquiryCon" id="InquiryCon" cols="50" rows="6" placeholder="문의내용을 입력해주세요."></textarea>
+                </td>
+              </tr>
+              <tr>
+                <th><label  class="hidden" for="info">개인정보수집동의</label></th>
+                <td><input type="checkbox" name="info" id="info">개인정보 수집 동의</td>
+              </tr>
+                <tr>
+                    <td colspan="2">
+                      <input type="submit" id="btn" value="확 인" >
+                    </td>
+                </tr>
+              </table>
+         </form>
+
+        </div>
+      </div>
+      </article>
+      <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

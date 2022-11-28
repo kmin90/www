@@ -1,0 +1,308 @@
+<?
+session_start();
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<title>유한양행</title>
+
+<link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/sub1_1.css">
+<script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+<script src="../js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+ <div id="wrap">
+    <header id="headerArea">
+       <div class="header_top">
+         <h1><a href="../index.html">
+          유한양행로고
+         </a></h1>
+         <a href="#" class="menu_ham openBtn"><span>햄버거</span></a>
+         <div class="modal_box"></div>
+       </div>
+        <nav id="gnb">
+          
+           <h2 class="hidden">글로벌네비게이션영역</h2>
+          <a href="../index.html"><span class="yhlogo"></span></a>
+
+           <section class="productSearch">
+            <h3 class="hidden">제품검색</h3>
+            <div>
+              <form>
+                <label for="searchIn" class="hidden">제품검색</label>
+                <input
+                  type="text"
+                  name="searchIn"
+                  id="searchIn"
+                  autocomplete="off"
+                  placeholder="제품을 검색해보세요"
+                />
+                <input type="submit" name="btn" id="btn" value="검색버튼">
+              </form>
+            </div>
+          </section>
+
+           <ul class="mainMenu">  
+            <li class="depth1"><h3><a href="#">기업소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+                <ul>
+                  <li><a href="../sub/sub1_1.html">회사개요</a></li>
+                  <li><a href="../sub/sub1_2.html">인사말</a></li>
+                  <li><a href="../sub/sub1_3.html">회사연혁</a></li>
+                  <li><a href="../sub/sub1_4.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="depth1"><h3><a href="#">제품소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub2_1.html">제품소개</a></li>
+                  <li><a href="../sub/sub2_2.html">브랜드</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">윤리경영<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub3_1.html">준법경영</a></li>
+                  <li><a href="../sub/sub3_2.html">안전경영</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-plus"></i></span></a></h3>
+            <ul>
+              <li><a href="../sub/sub4_1.html">뉴스&amp;공지</a></li>
+              <li><a href="../sub/sub4_2.html">자주묻는질문</a></li>
+           </ul>
+          </li>
+        </ul>
+
+        <div class="side">
+          <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+          //$userid=$_SESSION['userid']; 정석 
+          
+              if(!$userid){
+       
+          ?>
+          <ul>
+            <li class="login"><a href="./login/login_form.php">로그인</a></li>
+            <li class="join"><a href="./member/join.html">회원가입</a></li>
+          </ul>
+
+      <?
+        }
+        else
+        {
+      ?>
+
+          <ul>
+            <li class="logout"><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./member/member_form_modify.php">정보수정</a></li>
+          </ul>
+      <?
+        }
+      ?>
+        
+      </div>
+    </nav>
+
+
+
+  </header>
+    <div class="main">
+        <img src="./images/sub1_bg.png" width="100%" alt="기업소개배경이미지">
+       <div class="main_content">
+         <h3>기업소개</h3>
+         <p>Corporate Introduction</p>
+       </div>
+    </div>
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub1_1.html" class="current">회사개요</a></li>
+        <li><a href="./sub1_2.html">인사말</a></li>
+        <li><a href="./sub1_3.html">회사연혁</a></li>
+        <li><a href="./sub1_4.html">오시는길</a></li>
+      </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+        <h4>회사개요</h4>
+        <div class="contentArea">
+          <p>
+            <span>"가장 좋은 상품을 만들어<br> 국가와 동포에게 도움을 주자"</span
+              ><br>창업자 유일한 박사의 정신으로<br> 1926년 유한양행은
+              설립되었습니다.
+            </p>
+          <div class="contentInner">
+            <div>
+              <img src="./images/sub1_con1-1.png" width="100%" alt="조욱제대표이미지">
+              <div class="text1">
+                <p class="textBold">
+                  <strong>유한양행</strong>은 창업이래 지금까지 신뢰와 정직의
+                  기업문화를 가지고 우수한 의약품 생산과 국민보건 향상에 매진해
+                  왔습니다.
+                </p>
+                <p>
+                  국내 1등 제약사, 국내 대표 장수기업 등 외형적 성장뿐만 아니라
+                  한국에서 가장 존경받는 기업 1위 등 사회 공헌 대표 기업으로
+                  자리매김하고 있습니다.
+                </p>
+              </div>
+            
+              <div class="text2">
+                
+                <p>
+                  <strong>유한양행</strong>은 국민보건 향상과 직결되는 의약품뿐만
+                  아니라 건강기능식품, 생활용품, 동물약품 등 인류의 건강과 삶의
+                  질을 높일 수 있는 다양한 사업에 진출하며 미래의 지속성장을 위해
+                  노력하고 있습니다.
+                </p>
+                <p class="textBold">
+                  끊임없는 연구개발을 통해 혁신적 신약개발로 글로벌 시장 진출에
+                  박차를 가하고 있습니다.
+                </p>
+              </div>
+            </div>
+            
+            <div class="text3">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>기업명</dt>
+                    <dd>(주)유한양행</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>대표이사</dt>
+                    <dd>조욱제</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>설립일자</dt>
+                    <dd>1926년 06년 20일</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>상장일</dt>
+                    <dd>1962년 11월 01일</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>주소</dt>
+                    <dd>서울특별시 동작구 노량진로 74</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>전화번호</dt>
+                    <dd>02) 828-0181</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <img src="./images/sub1_con1-2.png" width="100%" alt=""> -->
+          <p class="lastText">
+            국내 1등을 넘어 글로벌 제약사로의 길, <br>인류 건강을 위한 그 길을
+            큰 꿈을 갖고 걸어가려 합니다.
+          </p>
+        </div>
+    </article>
+
+
+
+
+    <footer id="footerArea">
+      <div class="footerInner">
+          <a class="topMove" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+          
+          <div class="family">
+            <a class="arrow" href="#">
+              <span>Famliy Site<i class="fas fa-chevron-up"></i></span>
+            </a>
+            
+            <ul class="FList">
+              <li>
+                <a href="#" title="유한킴벌리사이트가새창에열림" target="_blank">유한킴벌리</a>
+              </li>
+              <li>
+                <a href="#" title="유한크로락스사이트가새창에열림" target="_blank">유한크로락스</a>
+              </li>
+              <li>
+                <a href="#" title="유한화학사이트가새창에열림" target="_blank">유한화학</a>
+              </li>
+              <li>
+                <a href="#" title="유한메디카사이트가새창에열림" target="_blank">유한메디카</a>
+              </li>
+              <li>
+                <a href="#" title="한국얀센사이트가새창에열림" target="_blank">한국얀센</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footerLink">
+
+            <ul>
+              <li><a href="#">사이트이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영·관리 방침</a></li>
+              <li><a href="#">사이트이용</a></li>
+              <li><a href="#">도움말</a></li>
+            </ul>
+    
+            <div class="add">
+              <address>
+                <span>주소 서울시 동작구 노량진로 74</span>
+                <span>문의전화 02)828-0181</span><span>FAX 02)828-0050</span
+                >
+                <span>대표자 조욱제</span
+                ><span>사업자등록번호 118-81-00601</span>
+              </address>
+              <p>COPYRIGHT&copy; 2013 YUHAN. ALL RIGHT RESERVED</p>
+            </div>
+
+          </div>
+    
+          
+        </div>
+  </footer>
+
+  </div>
+ 
+ <script src="../js/jquery-1.12.4.min.js"></script>
+ <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="../js/main.js"></script>
+
+ 
+ 
+</body>
+</html>

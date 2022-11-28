@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermès</title>
+
+    <link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsiveGallery.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery.responsiveGallery.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/top.js"></script>
+    
+    
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <div id="skipNav">
+        <a href="#content">Body Content Area</a>
+        <a href="#navbar-example">Global Navigation Area</a>
+   </div>
+
+    <div id="wrap" class="container-fluid">
+        <header id="headerArea"> 
+            <h1><a href="index.html">Hermès</a></h1>
+            <nav id="navbar-example" class="navbar navbar-fixed-top">
+                <h2 class="hidden">Global Navigation Area</h2>
+                <div class="container">  
+                  <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#menu1"><h3>About</h3></a></li>
+                        <li><a href="#menu2"><h3>Women</h3></a></li>
+                        <li><a href="#menu3"><h3>Men</h3></a></li>
+                        <li><a href="#menu4"><h3>Maison Hermès</h3></a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </nav>
+        </header>
+
+        <div class="main_visual">
+            <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"><li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+                </ol>
+        
+                 <!-- Carousel items -->
+                 <div class="carousel-inner">
+                    <div class="item active">
+                       <img src="./images/main1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                       <img src="./images/main2.jpg" alt="Second slide">              
+                    </div>
+                    <div class="item">
+                       <img src="./images/main3.jpg" alt="Third slide">               
+                    </div>
+                 </div>
+            
+                  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                   <img src="./images/left.png" class="control" alt="leftbtn">
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <img src="./images/right.png" class="control" alt="rightbtn">
+                  </a>
+            </div>
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">Body Content Area</h2>
+                 <div class="content_1">
+                   <div class="Txtcenter">
+                     <h4 id="menu1">ABOUT HERMÈS</h4>
+                     <p>Hermès, contemporary artisans since 1837</p>
+                     <p>
+                        Since 1837, Hermès has remained faithful to its artisanal model and its 
+                        humanist values. The freedom to create, the constant quest for beautiful 
+                        materials, and the transmission of exceptional know-how - which enable 
+                        the creation of useful, and elegant objects which stand the test of time -
+                         forge the uniqueness of Hermès.</p>
+                   </div>
+                    <div>
+                        <ol class="pluscontent_area row list-unstyled">
+                            <li class="col-lg-12 col-sm-6">
+                                <div class="row">
+                                    <img class="col-lg-6 col-sm-12" src="./images/about1.png" alt="Creative freedom">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="p1">
+                                        <p><strong>Creative freedom</strong>
+                                            The sixteen métiers of the house create collections that combine freedom 
+                                            with inventiveness and know-how. The objects are designed to be durable 
+                                            and to adapt to changing lifestyles.</p>
+                                            <a href="#myModal" data-toggle="modal">A group with partners</a>
+                                        </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <strong class="modal-title" id="myModalLabel">A group with partners</strong>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                       <div class="modalImg">
+                                                            <img src="./images/modal1_1.jpg" alt="Filippo Fior">
+                                                            <img src="./images/modal1_2.jpg" alt="Jack Davison">
+                                                        </div>
+                                                   
+                                                  
+                                                    <p>Hermes works with suppliers, ranging from quality to ethics, society, economy and the environment
+                                                        We promise and execute challenges in many areas.
+                                                        We are always working to align the values Hermes pursues with sustainable development.
+                                                        For a long time (basic cooperation period of 19 years with major partners), the trust you have built up over the years
+                                                        We're building a solid system together based on it.</p>
+                                                   
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                                                    </div>
+                                                </div>
+                                                </div> 
+                                            </div> <!-- 모달 전체 윈도우 -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-12 col-sm-6">
+                                <div class="row">
+                                    <img class="col-lg-6 col-lg-push-6 col-sm-12" src="./images/about2.png" alt="A house of artisans and human values">
+                                    <div class="col-lg-6 col-lg-pull-6 col-sm-12">
+                                        <div class="p2">
+                                        <p><strong>A house of artisans and human values</strong>
+                                            Humanist values, based in the artisanal world, guide the company in its 
+                                            development: Hermès is committed to preserving resources, supporting the regions in which its manufactures operate and ensuring the transmission of exceptional know-how.</p>
+                                            <a href="#myModal2" data-toggle="modal" class="a2">Hermes Artistic Direction</a>
+                                        </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <strong class="modal-title" id="myModalLabel2">Hermes Artistic Direction</strong>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                       <div class="modalImg">
+                                                            <img src="./images/modal2_1.jpg" alt="Alfredo Piola">
+                                                            <img src="./images/modal2_2.jpg" alt="Benoît Teillet">
+                                                        </div>
+                                                   
+                                                  
+                                                    <p>Pierre-Alexis Dumas, Artistic Director, Hermes
+
+                                                        Axel de Beaufort, Design & Engineering Director, Hermes Orizon
+                                                        
+                                                        Philippe Delhota, creative director of Hermes watch
+                                                        
+                                                        Christophe Goineau, male silk creative director
+                                                        
+                                                        Pierre Hardy, creative director of Hermes Shoes & Jewelry
+                                                        
+                                                        Charlotte Macaux Perelman & Alexis Fabry, Hermes Home Artistic Director
+                                                        
+                                                        Christine Nagel, creative director of Hermes Perfume
+                                                        
+                                                        Véronique Nichanian, artistic director of the men's collection
+                                                        
+                                                        Cécile Pesce, Women's Silk Creative Director
+                                                        
+                                                        Nade Vge Vanhée-Cybulski, artistic director of women's clothing
+                                                        
+                                                        Godfroy de Virieu, creative director of petit</p>
+                                                   
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                                                    </div>
+                                                </div>
+                                                </div> 
+                                            </div> <!-- 모달 전체 윈도우 -->
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                 </div>
+
+                 <div class="content_2">
+                    <div class="Txtcenter">
+                      <h4 id="menu2">Women</h4>
+                      <p>Women's autumn-winter 2022 runway show</p>
+                      <p>
+                        To weather the winter, a wardrobe that dialogues with sensuality. 
+                        It caresses, envelops, and summons the essence of nature, 
+                        transporting a dynamic silhouette toward new certainties.</p>
+                    </div>
+                    <div>
+                        <ul>
+                          <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <img src="./images/women1.png" alt="women1">
+                          </li>
+                          <li class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <img src="./images/women2.png" alt="women2">
+                          </li>
+                          <li class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+                            <img src="./images/women3.png" alt="women3">
+                          </li>
+                          <li class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                            <img src="./images/women4.png" alt="women4">
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content_3">
+                    <div class="Txtcenter">
+                        <h4 id="menu3">Men</h4>
+                        <p>Relive the Men’s winter 2022 collection</p>
+                         <p>
+                        A promise of warmth
+                        Wrapped around the neck, men’s scarves and carrés in silk, 
+                        wool, and cashmere evoke a dreamlike world in pastel tones, 
+                        illuminated by pop colors.</p>
+                    </div>
+                        <div class="content_bot best_product">
+                            <div class="best_product_inner">
+                                    <div class="w-gallery">
+                                        <div id="responsiveGallery-container" class="responsiveGallery-container">
+                                        <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a> 
+                                        <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+                                        <ul class="responsiveGallery-wrapper">
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men1.jpg" alt="Patch Cuir Super H muffler" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">Patch Cuir Super H muffler</dt>
+                                                            <dd class="responsivGallery-position">CA$1,275</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men2.jpg" alt="H Torsade Cuir muffler" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">H Torsade Cuir muffler</dt>
+                                                            <dd class="responsivGallery-position">CA$890</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men3.jpg" alt="Circuit 24 Faubourg muffler" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">Circuit 24 Faubourg muffler</dt>
+                                                            <dd class="responsivGallery-position">CA$640</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men4.jpg" alt="Panama Rayee muffler" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">Panama Rayee muffler</dt>
+                                                            <dd class="responsivGallery-position">CA$890</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men5.jpg" alt="The Parage rectangle" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">The Parage rectangle</dt>
+                                                            <dd class="responsivGallery-position">CA$1,125</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="responsiveGallery-item"> 
+                                                <a href="#" class="responsivGallery-link">
+                                                    <img src="./images/men6.jpg" alt="Upside Down pocket square 45" class="responsivGallery-pic">
+                                                    <div class="w-responsivGallery-info">
+                                                        <dl>
+                                                            <dt class="responsivGallery-name">Upside Down pocket square 45</dt>
+                                                            <dd class="responsivGallery-position">CA$230</dd>
+                                                        </dl>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        </div> 
+                                    </div>
+                            </div>
+                        </div>
+                   
+                </div>
+
+                <div class="content_4">
+                    <div class="Txtcenter">
+                        <h4 id="menu4">Maison Hermès</h4>
+                        <p>Maison Hermès Dosan Park</p>
+                         <p>
+                            Maison Hermes Dosan Park, which has been the home of Hermes since November 2006,
+                            Since its opening as the fourth Maison in the world, Hermes' craftsmanship and Korean culture have been introduced
+                            It has established itself as an important cultural space to promote mutual exchange.</p>
+                    </div>
+
+                    <div class="TxtR row">
+                     
+                        <img class="col-lg-6" src="./images/dosanpark.png" 
+                            alt="Maison Hermès Dosan Park">
+                        <div class="col-lg-6">
+                            <p>Maison Hermes, who underwent two renovations in 2014 and 2017
+                                Dosan Park is currently on the first basement floor of Atelier, an exhibition space for modern art
+                                Hermes and cafe yard, and from the first to third floors, Hermes' wide collection
+                                It consists of a store that is presented. The design of this place is the world's Hermes
+                                It was conducted by the late Rena Dumas, who designed Maison.</p>
+                                
+                            <p>The wife of the late Jean-Louis Dumas, the fifth-generation descendant and chairman of the Hermes family
+                                Rena Dumas, an architect, interior designer and artist, was Maison
+                                From studying the country, city, and distance when working on a design project
+                                We've started. Maison Hermes Dosan Park has also studied this kind of Rina Dumas
+                                It was designed inspired by the traditional Korean house form.
+                                Maison Hermes Dosan Park, a glass hexahedral design with light and shadow projection,
+                                It's also a store that sells products, but at the same time, all the sides of Hermes take turns
+                                It is a space of encounters, surprises, and culture that appears. Maison's courtyard and terrace,
+                                Glass and stairs are the homage to the communication and leisure virtues of hanok
+                                It shows Hermes' craftsmanship and Korean cultural encounters.</p>
+                        </div>
+                    </div>
+
+                    <div class="container">  
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a href="#home" data-toggle="tab">Atelier Hermès</a></li>
+                          <li><a href="#tab1" data-toggle="tab">Windows Display</a></li>
+                          <li><a href="#tab2" data-toggle="tab">Café Madang</a></li>
+                        </ul>
+                       
+                      <div class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            <img src="./images/dosan1.jpg" alt="Atelier Hermès" class="col-lg-6">
+                            <div class="col-lg-6">
+                                <strong>Atelier Hermès</strong>
+                                <p>Atelier Hermes is an artist who suggests "art as a form of life."
+                                Participating in creative enthusiasm and supporting their experimental and dynamic artistic activities
+                                It's an exhibition space for modern art.</p>
+                                <p>Atelier Hermes is a more professional and dense museum of international contemporary art
+                                Promote exchange activities and create a high level of creative environment for domestic and foreign artists
+                                To create a more dynamic and rich Korean contemporary art scene,
+                                I'm aiming for that. With the launch of the Hermes Foundation in 2008, Hermes's
+                                Sponsorship has entered a new chapter, and now it is time for Atelier Hermes in Seoul
+                                It supports exhibition spaces located in Brussels and Tokyo.</p>
+                            </div>
+                        </div>
+                      
+                    
+                        <div class="tab-pane fade" id="tab1">
+                            <img src="./images/dosan2.jpg" alt="Windows Display" class="col-lg-6">
+                            <div class="col-lg-6">
+                                <strong>Windows Display</strong>
+                            <p>Hermes' original Windows display has Hermes' theme of the year
+                            It is conveyed visually and vividly through the artist's sense and new interpretation.
+                            Four times a year, the large and small show windows at Maison Hermes Dosan Park are located in the city center
+                            It's going to be Hermes' own performance.</p>
+                            
+                            <p>Current Windows Display
+                            Jackson Hong &lt;Parkour Race in the City of Hermes&gt;
+                            September 8, 2022 - October 11, 2022</p>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane fade" id="tab2">
+                            <img src="./images/dosan3.jpg" alt="Café Madang" class="col-lg-6">
+                            <div class="col-lg-6">
+                                <strong>Café Madang</strong>
+                            <p>Café Madang, located on the first basement floor of Maison Hermes Dosan Park,
+                            It is a space where you can fully feel the harmony of yin and yang expressed as the center of Maison Hermes
+                            Hotel Shilla's best chef prepares meals with seasonal ingredients and after meals,
+                            You can enjoy a variety of desserts and drinks to enjoy.</p>
+                            <p>The menus in the cafe yard are Hermes' representative 'Rally 24', 'Mosaic 24'
+                            Platinum (Mosaiqueque au 24 Platin), Saint-Louis, Puiforcat
+                            It comes with a light tableware, crystal, and silver collection.</p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+               </div>
+       
+           
+           
+           <a href="#top" class="btn topMove">TOP</a>
+        </article>
+        <footer id="footerArea">
+            <div class="footerInner">
+                
+                    <img src="./images/logo.png" alt="Hermèslogo">
+                    <p>&copy; Hermès 2022. All rights reserved.</p>
+                
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('body').scrollspy({ target: '#navbar-example' })
+    </script>
+
+    <script>
+      $(function () { 
+            $('.responsiveGallery-wrapper').responsiveGallery({
+                animatDuration: 400, 
+                $btn_prev: $('.responsiveGallery-btn_prev'),
+                $btn_next: $('.responsiveGallery-btn_next')
+            });
+        });
+    </script>
+   
+    <script>
+    $('.carousel').carousel()
+    </script>
+
+ 
+</body>
+</html>

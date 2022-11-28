@@ -1,0 +1,336 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+  width: 1200px;
+  margin: 200px auto;
+  }
+
+/* 게시판 */
+#greet{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*#list_top_title ul li{
+   float: left;
+  
+}
+#list_title1{
+  width: 50px;
+}
+#list_title2{
+  width: 750px;
+}
+#list_title3{
+  width: 100px;
+}
+#list_title4{
+  width: 100px;
+}
+#list_title5{
+  width: 100px;
+}
+  table thead{
+    font-size:1.250em;
+    display: block;
+    width: 1100px;
+    height: 50px;
+    margin: 50px auto;
+    
+  } */
+
+  #list_search {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  #list_search #list_search1 {
+    float:left;
+    margin-top:2px;
+    margin-right: 368px;
+  }
+  
+  #list_search #list_search2 {
+    float:left;
+  }
+  
+  
+  #list_search #list_search3 {
+    float:left;
+    margin-left:5px;
+  }
+  
+  #list_search #list_search3 select {
+    width:80px;
+    height:40px;
+    border:solid 1px #ccc;
+  }
+  
+  #list_search #list_search4 {
+    float:left;
+    margin-left:3px;
+  }
+  
+  #list_search #list_search4 input {
+    width: 300px;
+    height: 36px;
+    border:solid 1px #ccc;
+  }
+  
+  #list_search #list_search5 {
+    float:left;
+    margin-left:5px;
+  }
+
+  .list_count{
+  text-align: right;
+  margin: 0 10px 20px 0;
+}
+
+  #list_top_title {
+    height:50px;
+    font-weight: 500;
+    font-size: 1.12em;
+    border-top:solid 1px #ccc;
+    background: rgba(54, 114, 195, .2);
+    display: block;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  #list_top_title ul li {
+    display:inline;
+    
+  }
+  
+  #list_top_title #list_title1 {
+    margin-left:12px;
+  }
+  
+  #list_top_title #list_title2 {
+    margin-left:350px;
+  }
+  
+  #list_top_title #list_title3 {
+    margin-left:310px;
+  }
+  
+  #list_top_title #list_title4 {
+    margin-left:100px;
+  }
+  
+  #list_top_title #list_title5 {
+    margin-left:92px;
+  }
+  
+  #list_content {
+    height:380px;
+  }
+  
+  #list_item {
+    height:25px;
+    margin-top:2px;
+    padding:6px;  
+    border-bottom:solid 1px #eeeeee;
+  }
+  
+  #list_item #list_item1{
+    float:left;
+    width:40px;
+    text-align:center;
+  }
+  
+  #list_item #list_item2{
+    float:left;
+    width: 645px;
+    padding-left: 50px;
+  }
+  
+  #list_item #list_item3{
+    float:left;
+    width:65px;
+    text-align:center;
+  }
+  
+  #list_item #list_item4{
+    float:left;
+    width:240px;
+    text-align:center;
+  }
+  
+  #list_item #list_item5{
+    float:left;
+    width:40px;
+    text-align:center;
+  }
+  
+  #page_button {
+    margin-top:20px;
+  }
+  
+  #page_num {
+    float:left;
+    width:1100px;
+    margin-top:10px;
+    text-align:center;
+  }
+  
+  #button {
+    float:left;
+    width:1100px;
+    text-align:right;
+  }
+  .search_btn{
+    background: #3672c3;
+    color: #fff;
+    font-size:1.2em;
+    width: 100px;
+    height: 40px;
+    border: 0;
+  }
+  /* write_form css */
+  #col2{
+    width:1100px;
+    margin: 100px auto;
+  }
+  #write_form_title {
+    margin-top:20px;
+    width:1100px;
+    height: 30px;
+    margin: 0 auto;
+    text-align:center;
+    padding-top:7px;  
+    border-top:solid 2px #aaa;
+    background-color:#eee;
+  }
+  
+  #write_form {
+    margin-top:10px;
+  }
+  
+  #write_form #write_row1 {
+    width:1100px; 
+    height:25px; 
+    margin:2px 0 2px 0; 
+  }
+  
+  #write_form #write_row2 {
+    width:1100px;  
+    height:25px; 
+    margin:2px 0 2px 0; 
+  }
+  
+  #write_form #write_row3 {
+    width:1100px; 
+    height:251px; 
+    margin:2px 0 2px 0; 
+  }
+  
+  .write_line {
+    width:1100px;  
+    overflow: hidden;
+    border-bottom:solid 1px #ccc;
+  }
+  
+  #write_form .col1 {
+    float:left;
+    width:120px;
+    text-align:center;
+    padding:5px;
+    background-color:#eeeeee;
+  }
+  
+  #write_form #write_row3 .col1 {
+    height:126px;
+    padding-top:120px;
+  }
+  
+  #write_form .col2 {
+    float:left;
+    margin-left: 8px;
+    margin-top:2px;
+  }
+  
+  #write_form #write_row1 .col2 {
+    float:left;
+    margin-top:6px;
+  }
+  
+  #write_form #write_row1 .col3 {
+    float:left;
+    margin-top:4px;
+    margin-left:100px;
+  }
+  
+  #write_row2 .col2 input {
+    width:650px;
+    height:24px;
+    border:solid 1px #cccccc;
+  }
+  
+  #write_row3 .col2 textarea {
+    width:650px;
+    margin-top:1px;
+    border:solid 1px #cccccc;
+  }
+  
+  #write_button {
+    margin-top:15px;
+    width:97%;
+    text-align:right;
+  }
+  
+  /* view.php css */
+  
+  #view_comment {
+    margin:10px 0 0 10px;
+  }
+  
+  #view_title {
+    height:18px;
+    padding:10px 8px 8px 8px;  
+    border-top:solid 2px #aaaaaa;
+    background-color:#eeeeee;
+    margin-bottom:5px;
+  }
+  
+  #view_title1 {
+    float:left;
+    width:70%;
+  }
+  
+  #view_title2 {
+    float:left;
+    width:28%;
+    text-align:right;
+  }
+  
+  #view_content {
+    width:96%;
+    min-height:200px;
+    padding:15px;
+    overflow:hidden;
+    line-height:150%;
+    border-bottom:solid 1px #cccccc;
+  }
+  
+  #view_button {
+    width:98%;
+    text-align:right;
+    margin-top:15px;
+    margin-bottom:15px;
+  }
+  .btn{
+    font-size: 16px;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+  }

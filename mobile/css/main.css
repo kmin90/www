@@ -1,0 +1,194 @@
+/* CSS Document */
+
+
+  .gallery ul li a{display: block;}
+   .gallery li p {
+      display: block;
+      width: 100%;
+      font-size: 1.5em;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+    }
+    
+    .gallery li p span {
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 10px;
+      font-size: 2.5em;
+      color: #fff;
+      font-weight: 600;
+      display: block;
+    }
+    .gallery{
+      width: 100%;
+      height: 100%;
+    }
+    .gallery .swiper-slide {
+      text-align: center;
+      background: #fff;
+      width: 100%;
+    }
+  
+    
+    /* 제품소개 */
+  
+  #content .newProduct{
+      width: 100%;
+      text-align: center;
+  }
+  #content .newProduct div h3{
+    font-family: "Roboto", sans-serif;
+      margin: 30px 0 10px;
+      font-size: 1.714em;
+      font-weight: 600;
+  }
+  #content .newProduct .conBox1{
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+  #content .newProduct ul li.swiper-slide{
+      background-position: center;
+      background-size: cover;
+      width: 220px;
+      height: 220px;
+    }
+    #content .newProduct .conBox1 ul li p{
+      font-size: 1.143em;
+      font-weight: 600;
+    }
+  #content .newProduct .conBox1 ul li p span{
+    font-size: 1em;
+      display: block;
+      color: #999;
+    }
+  
+  
+  /* 회사소개 */
+  
+  #content .introduction{
+  width: 100%;
+  position: relative;
+  margin: 50px 0;
+  }
+  #content .introduction ul{
+  background: url(../images/con2_bgx2.png) center no-repeat;
+  background-size: cover;
+  }
+  #content .introduction ul li{
+  padding: 20px; margin-bottom: 5px; width: 100%;
+  border-bottom: 1px solid #fff;
+  }
+  #content .introduction ul li:nth-last-child(){border: 0;}
+  #content .introduction ul li a{overflow: hidden; display: block;}
+  #content .introduction ul li a img{float: left; padding-left: 15%;}
+  #content .introduction ul li a p{
+    font-size: 2em; 
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  
+  /* 윤리경영 */
+
+
+   #content .social ul li{
+    width: 100%;
+    overflow: hidden;
+    position: relative;}
+   #content .social ul li img{
+    display: block;
+    border-radius: 10px;
+}
+    #content .social ul li a{
+        overflow: hidden;
+    }
+   #content .social ul li p{
+    color: #fff;
+    position: absolute; 
+    bottom: 0; left: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, .3);
+    background-size: cover;
+    font-size: 1.1em;
+    text-align: justify;
+    height: 55%;
+    border-radius:10px;
+}
+
+    #content .social ul li p span{
+        margin-bottom: 10px;
+        display: block;
+        font-size: 1.5em; 
+        font-weight: 600;
+    }
+    #content .social .swiper-scrollbar{
+      margin-top: 20px;
+    }
+    /* 자주 묻는 질문 qna */
+
+#content .qna{
+  margin: 50px 0;
+  position: relative;}
+  #content .qna p{ 
+    text-align: justify;
+    line-height: 1.5em;
+  }
+#content .qna h3{
+      margin: 20px 10px;
+      font-size: 1.714em;
+      font-weight: 600;
+    }
+
+#content .qna ul li p.q  {
+    width: 100%;
+    font-size: 1.143em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#content .qna ul li p.q img{
+  margin-left: 5px;
+}
+#content .qna ul li{position: relative;}
+#content .qna ul li .a{
+  background: #f8f8f8;
+  height: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  padding-left: 10%;
+ 
+  display: none;
+}
+#content .qna ul li .a span{
+  width: 20%;
+  position: absolute;
+  top: 35px; left: 10px;
+  float: left;
+  font-size: 1.25em;
+  color: #ccc;
+}
+#content .qna > a{
+  font-size: 1.143em;
+  position: absolute;
+  top: 0; right: 0;
+  padding: 5px 10px; 
+  font-family: "Roboto", sans-serif;
+}
+#content .qna > a i{
+  padding: 0 10px;
+}
+
+#content .qna ul li .plus{
+     display: block; 
+     position: absolute; 
+     right: 15px; top:0;
+     color: #333;
+}
+
+    

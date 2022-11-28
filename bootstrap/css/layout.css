@@ -1,0 +1,341 @@
+html{ scroll-behavior: smooth;}
+
+body {
+    position: relative;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+.hidden, #skipNav{position: absolute; display: block;width:1px; height: 1px;
+     left:-1000%; top:0; overflow: hidden; color: #fff;}
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: inline-block;
+}
+
+#wrap{
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#headerArea 
+.container{
+  padding-right: 0; 
+  padding-left: 0; 
+  margin-right: 0; 
+  margin-left: 0;
+  width: 100%;
+}
+#headerArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0, .1);
+ }
+
+#headerArea div ul.navbar-right{
+  margin-right: 3%;
+}
+ #wrap div.main_visual div.item img{
+  width: 100%;
+ }
+#navbar-example{
+  margin: 0;
+}
+.main_visual{
+  margin-top: 80px;
+}
+
+
+#headerArea button{
+  margin-top: 20px;
+  margin-right: 30px;
+  background-color: #fff;
+}
+#headerArea button span.icon-bar{
+ background-color: #333;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+}
+#headerArea button:hover span{
+  background-color: #f37021;
+ }
+#headerArea h1{
+  margin: 20px 0 0 20px;
+}
+#headerArea h1 a{
+  float: left;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -9999px;
+  width: 88px;
+  height: 50px;
+  position: relative;
+  z-index: 1031;
+ }
+
+ #headerArea #navbar-example ul.nav li a h3{
+font-size: 2rem;
+ }
+ #headerArea #navbar-example ul.nav li a{
+  color: #333;
+  padding: 14px;
+  } 
+
+  #headerArea #navbar-example ul.nav li a:hover{
+    background:#fff;
+    color: #f37021;
+  }
+
+#content div.content_1 div.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+#content div.content_4{
+  margin-bottom: 100px;
+}
+#content div.content_4,
+#content div.content_3,
+#content div.content_2,
+#content div.content_1 {
+width: 100%;
+overflow: hidden;
+}
+#content div.content_4 div.Txtcenter,
+#content div.content_3 div.Txtcenter,
+#content div.content_2 div.Txtcenter,
+#content div.content_1 div.Txtcenter{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#content div.content_4 div.Txtcenter h4,
+#content div.content_3 div.Txtcenter h4,
+#content div.content_2 div.Txtcenter h4,
+#content div.content_1 div.Txtcenter h4{
+  font-size: 1.5em;
+  padding: 100px 0 20px 0;
+}
+
+#content div.content_4 div.Txtcenter p,
+#content div.content_3 div.Txtcenter p,
+#content div.content_2 div.Txtcenter p,
+#content div.content_1 div.Txtcenter p{
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+
+#content div.content_1 div ol li img{
+  padding: 5px;
+  box-sizing: border-box;
+}
+#content div.content_1 div ol li{
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+#content div.content_1 div ol li a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 10% 5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #f37021;
+}
+#content div.content_1 div ol li a:hover{
+  background: #f8f8f8;
+}
+#content div.content_1 div ol p{
+  margin: 10% 5%;
+}
+
+
+
+#content div.content_1 div .p2{
+  text-align: right;
+}
+#content div.content_1 div p strong{
+  display: block;
+  color: #f37021;
+  font-size: 1.17em;
+  margin-bottom: 5%;
+}
+
+#content div.content_2 ul{
+  list-style: none;
+  text-align: center;
+  margin-left: -40px;
+  overflow: hidden;
+}
+#content div.content_2 ul li{
+  padding: 5px;
+  box-sizing: border-box;
+}
+#content div.content_2 ul li img{
+  width: 100%;
+}
+
+#content div.content_4 div.TxtR{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10% 10% 10%;
+}
+
+#content div.content_4 div.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+#content div.content_4 div.TxtR div{
+padding: 0 1%;
+box-sizing: border-box;
+margin-top: 50px;
+  }
+#content div.content_4 div.container .nav {
+    margin-bottom: 50px;
+
+  }
+
+div.w-gallery a.responsiveGallery-btn {
+    z-index: 1;}
+
+#content div.content_4 div.tab-content strong{
+display: block;
+padding: 20px 0;
+}
+#headerArea #navbar-example ul.nav li.active a{
+ color: #f37021;
+}
+#content div.content_4 div.container ul li.active a{
+  font-weight: 600;
+  color: #f37021;
+}
+#content div.content_4 div.container ul li:hover a{
+background: #fff;
+color: #f37021;
+}
+
+
+div.modal-body{
+text-align: center;
+}
+
+#footerArea{
+  width: 100%;
+}
+#footerArea .footerInner{
+  border-top: 1px solid #f37021;
+  margin-top: 20px;
+  text-align: center;
+}
+#footerArea .footerInner img{
+  margin: 10px 0;
+}
+#footerArea .footerInner p{
+  font-size: 14px;
+}
+
+.topMove{
+  color: #f37021;
+  font-size: 1.5em;
+  position:fixed;
+  bottom: 10%;
+  right: 3%;
+  z-index: 2;
+}
+#content div.content_3 .best_product .best_product_inner {
+  margin-bottom: 60px;
+}
+
+.w-gallery ul li div{
+  transition: all .5s;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+  transform: translateY(0px);
+  background: rgba(255,255,255, .8);
+  opacity: 0;
+}
+
+.w-gallery ul li div dl dd{
+  color: #333;
+}
+.w-gallery ul li:hover .w-responsivGallery-info{
+  opacity: 1;
+  transform: translateY(-120px);
+}
+.w-gallery ul li {
+  margin-left: 30px;}
+  
+#myModalLabel2,
+  #myModalLabel{
+  color: #333;
+  font-size: 1.12em;
+}
+
+     /* 와이드 pc */
+
+
+/* 일반pc */
+@media screen and (max-width:1200px) {
+
+  #content div.content_4 div.TxtR div{
+    text-align: center;
+  }
+  #content div.content_4 div.TxtR img{
+    width: 100%;
+    } 
+    
+  #content div.content_4 div.tab-content img{
+    width: 100%;
+  }
+}
+
+/* 테블릿 */
+@media screen and (max-width:992px) {
+  #content div.content_4 div.TxtR img{
+  width: 100%;
+  }
+  .w-gallery ul li {
+    margin-left: 0;}
+}
+
+/* 소형테블릿 */
+@media screen and (max-width:768px) {
+  #content div.content_1 div ol li img{
+    width: 100%;
+    padding: 0;
+  }
+ #headerArea div ul.navbar-right {
+    margin-right: 0;
+    background-color: #fff;
+    margin-top: 3px;
+    text-align: right;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0, .1);}
+#headerArea #navbar-example ul.nav li a{
+  padding: 10px 25px;
+  } 
+  div.modal-body .modalImg{
+    display: flex;
+  }
+  div.modal-body .modalImg img{
+  
+    margin: 10px;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+ 
+}

@@ -1,0 +1,424 @@
+<?
+session_start();
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+<title>유한양행</title>
+
+<link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/sub4_2.css">
+<script
+      src="https://kit.fontawesome.com/cb50a41295.js"
+      crossorigin="anonymous"
+    ></script>
+<script src="../js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+ <div id="wrap">
+    <header id="headerArea">
+       <div class="header_top">
+         <h1><a href="../index.html">
+          유한양행로고
+         </a></h1>
+         <a href="#" class="menu_ham openBtn"><span>햄버거</span></a>
+         <div class="modal_box"></div>
+       </div>
+        <nav id="gnb">
+          
+           <h2 class="hidden">글로벌네비게이션영역</h2>
+          <a href="../index.html"><span class="yhlogo"></span></a>
+
+           <section class="productSearch">
+            <h3 class="hidden">제품검색</h3>
+            <div>
+              <form>
+                <label for="searchIn" class="hidden">제품검색</label>
+                <input
+                  type="text"
+                  name="searchIn"
+                  id="searchIn"
+                  autocomplete="off"
+                  placeholder="제품을 검색해보세요"
+                />
+                <input type="submit" name="btn" id="btn" value="검색버튼">
+              </form>
+            </div>
+          </section>
+
+           <ul class="mainMenu">  
+            <li class="depth1"><h3><a href="#">기업소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+                <ul>
+                  <li><a href="../sub/sub1_1.html">회사개요</a></li>
+                  <li><a href="../sub/sub1_2.html">인사말</a></li>
+                  <li><a href="../sub/sub1_3.html">회사연혁</a></li>
+                  <li><a href="../sub/sub1_4.html">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="depth1"><h3><a href="#">제품소개<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub2_1.html">제품소개</a></li>
+                  <li><a href="../sub/sub2_2.html">브랜드</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">윤리경영<span><i class="fa-solid fa-plus"></i></span></a></h3>
+              <ul>
+                  <li><a href="../sub/sub3_1.html">준법경영</a></li>
+                  <li><a href="../sub/sub3_2.html">안전경영</a></li>
+              </ul>
+          </li>
+          <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-plus"></i></span></a></h3>
+            <ul>
+              <li><a href="../sub/sub4_1.html">뉴스&amp;공지</a></li>
+              <li><a href="../sub/sub4_2.html">자주묻는질문</a></li>
+           </ul>
+          </li>
+        </ul>
+
+        <div class="side">
+          <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+          //$userid=$_SESSION['userid']; 정석 
+          
+              if(!$userid){
+       
+          ?>
+          <ul>
+            <li class="login"><a href="./login/login_form.php">로그인</a></li>
+            <li class="join"><a href="./member/join.html">회원가입</a></li>
+          </ul>
+
+      <?
+        }
+        else
+        {
+      ?>
+
+          <ul>
+            <li class="logout"><a href="./login/logout.php">로그아웃</a></li>
+            <li><a href="./member/member_form_modify.php">정보수정</a></li>
+          </ul>
+      <?
+        }
+      ?>
+        
+      </div>
+    </nav>
+
+
+
+  </header>
+    <div class="main">
+        <img src="./images/sub4_bg.png" width="100%" alt="고객지원배경이미지">
+       <div class="main_content">
+         <h3>고객지원</h3>
+         <p>Customer Support</p>
+       </div>
+    </div>
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub4_1.html">뉴스&amp;공지</a></li>
+        <li><a href="./sub4_2.html" class="current">자주묻는질문</a></li>
+      </ul>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+        <h4>자주묻는질문</h4>
+        <div class="contentArea">
+          <div class="contentInner">
+            <a class="all" href="#"><span>모두열기<i class="fa-solid fa-circle-plus"></i></span></a>
+            <ul>
+              <li class="account hide">
+               <div class="q">
+                  <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>[삐콤씨],[삐콤씨에프],[삐콤씨에이스],[삐콤씨이브]의 차이는 무엇인가요?</p>
+                  </a>
+               </div>
+                <div class="a">
+                  <span>A.</span>
+                   <p>
+                    현재 유한양행에서 판매되고 있는 삐콤씨 시즈제품으로는 [삐콤씨], [삐콤씨에프], [삐콤씨에이스], [삐콤씨이브] 가 있습니다.</p>
+                  <p>[삐콤씨]정은 다종의 필수 비타민B군과 다량의 비타민C에 항산화 성분인 비타민E와 셀레늄을 함유하고 있어서, 
+                  피로, 영양불량, 병중, 병후, 임신, 수유기 등의 비타민 보급 및 신경통, 관절통, 구내염 등의 질병완화에 좋은 효과를 발휘합니다.</p>
+                  <p>[삐콤씨에프]에는 비타민B군과 비타민C, 철분, 비오틴, 토코페롤이 들어있기 때문에 현재 임신을 준비하는 많은 분들이 드시고 있습니다. 
+                  특히 엽산의 경우, 임산부에게 꼭 필요한 영양소이며, 권장량에 맞게 함유되어있어 임신계획중이거나 매달 정기적 월경이나 출산 전후로
+                  철분 보충이 필요한 여성분들께 많이 권해드리고 있습니다.</p>
+                  <p>[삐콤씨에이스]는 비타민 BㆍC에 비타민E, 엽산, 비오틴, 아연, 셀레늄, 
+                  우르소데스옥시콜린산을 첨가한 것입니다. 수용성인 비타민 BㆍC성분이 고단위로 들어있으면서 니코틴산아미드, 판토텐산칼슘 대신 
+                  우르소데옥시콜린산과 아연, 셀레늄 등 항산화 성분이 보강되었습니다. 우르소데스옥시콜린산은 담즙분비를 촉진하여 간장피로, 변비
+                  등에 효과가 좋습니다.</p>
+                  <p>[삐콤씨이브]는 비타민B군과 비타민C를 함유하며, 항산화제인 토코페롤, 코엔자임과 필수 미네랄인 마그네슘,
+                  철분, 칼륨이 보강되어 있어 특히 여성에게 좋은 효과를 기대할 수 있는 제품입니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+                <div class="q">
+                 <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p> [모아훼린]캡슐 안에 있는 내용물만 먹어도 되나요?</p></a>
+                </div>
+              
+                <div class="a"><span>A.</span>
+                   <p> 
+                    [모아훼린]캡슐을 열면 펠렛형(Pellet type)의 적갈색 구형과립이 들어있습니다. 
+                    </p>
+                   <p> [모아훼린]의 펠렛제형은 위장관 내에서 위점막 자극을 최소화하여 위장관 부작용을 낮추고 
+                    위장관 내에서 균등하게 흡수되어 약물 흡수의 개인차를 줄일 수 있도록 만들어진 제형이기 
+                    때문에 캡슐체로 복용해야 의도된 효과를 얻을 수 있습니다. </p>
+                    <p>
+                    [모아훼린] 복용 시 캡슐을 그대로 반컵 정도의 충분한 물과 함께 드시기 바랍니다. 
+                    평소에 위장이 예민하신 분들은 식후 즉시 1일 1-2회 복용하시면 됩니다.
+                    </p>
+                   
+                </div>
+              </li>
+              <li class="account hide">
+                <div class="q">
+                  <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                   <p>유효기간 지난 약을 먹어도 되나요?</p></a>
+                </div>
+                <div class="a"><span>A.</span>
+                   <p>
+                    제품의 유효기간은 법규내의 엄격한 실험 하에서 정해지기 때문에 사용기한 내에서는 
+                    최대 100% 약효를 보장하고 있습니다. 그러나 의약품의 성분은 햇빛뿐만 아니라 습도, 
+                    온도 등 다양한 보관요인에 의하여 영향을 받기 때문에 유효기간이 지난 제품은 
+                    성분이 감소되거나 변화될 가능성이 높아 유효성과 안전성을 확인할 수가 없으므로
+                     복용을 권해 드릴 수가 없습니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+                <div class="q">
+                  <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>비타민C가 하루 권장량보다 더 많은데 복용해도 될까요?</p></a>
+                </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>하루 권장량은 최소 필요량으로써 우리 몸이 생명을 유지하고 살아가는데 필요한 최소한의 양을 의미합니다. 
+비타민C의 하루 권장량은 성인남자 90mg으로 권장량 이하의 비타민C는 괴혈병 등의 결핍 질환을 유발할 수 있습니다.</p>
+                    <p>비타민C를 복용하여 항산화, 노화방지, 피부미용, 구내염 및 감기 예방 등의 효과를 얻기 위해서는 권장량 이상의 복용이 
+필요합니다. 비타민C를 하루 얼마 복용해야 하는가에 대해서는 학자들간에도 이견이 많으나 우리나라 정부에서는 
+하루 1,500mg까지 문제없이 복용하도록 하고 있습니다.</p>
+<p>특히 요즈음에는 비타민C의 고용량 복용(메가비타민 요법)이 
+여러 가지 질병치료에 유익하다는 보고가 나오고 있습니다. 비타민C의 작용은 노화억제, 감기예방, 여러 질병을 일으키는 
+산화과정 억제 등 매우 다양합니다. 비타민C는 수용성비타민으로 과량복용 시에도 축적이 없고 인체에서 사용하고 남은 
+양은 그냥 몸 밖으로 배출됩니다. 
+아주 과량을 복용하셨을 때 나타나는 부작용은 설사로 경미합니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+               <div class="q">
+                <a href="#" class="trigger">
+                   <i class="fa-regular fa-circle-question"></i>
+                    <p>코엔자임 큐텐이 함유된 영양제를 알고 싶어요.</p></a>
+               </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>유한양행의 코엔자임 큐텐성분이 있는 영양제로는 [웰리드]연질캡슐이 있습니다.[웰리드]는 대표적 항산화 성분인 베타카로틴,
+ 비타민C, 토코페롤, 셀레늄, 아연 및 코엔자임큐텐이 함유된 비타민과 무기질이 있는 항산화영양제입니다.</p>
+ <p>특히 코엔자임큐텐은
+ 체내 존재하는 성분으로 강력한 항산화물질인 동시에 체내 에너지 생성에 중요한 물질이며 최근 일본 미국 
+등에서 새로운 항산화물질로 각광받고 있습니다. 또한 코엔자임큐텐은 인체 내 정상적인 심장 기능을 유지하는 기능 등
+ 여러 가지 생리 기능에 관여하는 중요한 보조효소입니다.</p>
+ <p>우리 몸속에서 에너지를 만드는 과정에서 불가피하게 우리 몸에
+ 손상을 주는 유독한 물질인 산소 찌꺼기가 만들어지는데 이것을 “유리기”라고 합니다. 이 유리기는 노화, 혈액 순환 장애
+, 당뇨, 암, 자가 면역 질환 등 우리 인체에 치명적인 영향을 미치는 물질입니다. 이러한 유리기를 제거 하는 작용을 하는 것이 
+항산화제입니다. [웰리드]는 식사와 상관없이 복용하실수 있습니다. 다만 평상시 위장이 예민하신 분은 영양제 복용으로 
+위장장애를 호소할수도 있으므로 이런 분들께는 식사 직후에 복용하시는 것을 권해드립니다.</p>
+<p>아침, 저녁 식후 1캡슐씩 
+복용하시면 됩니다. 참고로 [웰리드]에는 아연이 들어있기 때문에 녹차나 홍차와의 복용은 피하는 것이 좋습니다.
+ 차중의 탄닌이라는 성분이 아연과 결합하여 흡수를 방해하기 때문입니다. 
+복용 전후 1시간동안은 녹차, 홍차의 섭취를 피하시고, 그 외의 시간에는 괜찮습니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+               <div class="q">
+                 <a href="#" class="trigger">
+                   <i class="fa-regular fa-circle-question"></i>
+                   <p>[다보타민큐]를 임산부가 복용해도 되나요?</p></a>
+               </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>[다보타민큐]는 베타카로틴, 비타민 B군, C, D, E와 엽산, 셀레늄, 아연, 철분 및 20여종의 비타민과 무기질을 함유한 
+고단위 종합 영양제입니다. 허약체질, 영양불량, 피로 등에 비타민 및 무기질의 보급제로 사용되며, 성장기 어린이부터 
+노년기까지 온 가족이 함께 복용할 수 있습니다.</p>
+<p> [다보타민큐]에는 비타민 A 대신 베타카로틴이라는 성분이 함유되어 있는데
+ 베타카로틴은 비타민A의 전구체로 우리 몸에 필요한 만큼만 비타민A로 바뀌므로 비타민 A보다 더 안전하게 드실 수 있습니다.
+[다보타민큐]에는 레티놀(비타민A)로 환산했을 때 1000 I.U. 정도의 낮은 함량의 베타카로틴이 함유된 것입니다.</p>
+                   <p>임산부의 경우, 임신 시 필수적인 엽산, 철분 등 여러 가지 미네랄과 비타민이 함유되어 있는 [다보타민큐]를 복용하시면 
+부족해지기 쉬운 영양섭취에 도움이 됩니다.단, 임신을 하게 되면 임신 초기에는 어떤 영양제도 권하지 않습니다.</p>
+<p>
+영양제가 나쁜 영향을 주기 때문이 아니라 임신 초기에는 모체의 영양으로도 충분하며, 중요한 시기이므로 만전을
+ 기하자는 의미입니다. 임신전이나 임신 4개월 이상부터는 복용하실 수 있습니다. 임신 전에 다보타민큐를 복용하시다가, 
+임신이 되면 잠시 중단을 하시고, 임신 중기 이후부터 다시 복용하시기 바랍니다.</p> 
+                </div>
+              </li>
+              <li class="account hide">
+               <div class="q">
+                <a href="#" class="trigger">
+                   <i class="fa-regular fa-circle-question"></i>
+                    <p>비타민제를 복용하는 시간은 언제인가요?</p></a>
+               </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>의약품의 복용 시간은 약품마다 다릅니다. 어떤 성분은 음식물이 있을 때 흡수가 저하되는 경우도 있고, 
+                   흡수가 상승하는 경우도 있습니다. 또 어떤 성분은 위장 장애를 일으키는 경우도 있습니다. 
+                   그러므로 가장 정확한 복용법은 제품 설명서의 용법 용량에 나타나 있습니다.</p>
+                   <p>특별히 식사 전과 식사 후가 명시되어 있지 않다면, 식사와 관계없이 복용할 수 있으므로 편하신 시간에 
+                   복용하시기 바라며 규칙적으로 복용하는 것이 중요합니다. 비타민제는 특별히 어떤 시간에 복용하는 것이 좋고 
+                   부작용이 없다는 연구가 없는 듯 하지만 비타민이 신진대사를 도우므로 활동이 활발한 낮 시간 전 오전에 드시는 것이
+                    좋고 수용성 비타민은 과량의 비타민이 배출되어버리므로 두 번에 나누어 드실 수 있다면 두 번에 걸쳐 드시는 것이
+                     좋습니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+               <div class="q">
+                 <a href="#" class="trigger">
+                   <i class="fa-regular fa-circle-question"></i>
+                   <p>[그랑페롤]을 구입했는데 I.U.가 무슨 표기인가요 ?</p></a>
+               </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>IU는 international unit의 약자로 비타민량 효과 측정용 국제 단위입니다. 1mg은 1.49 I.U.에 해당합니다.
+                     [그랑페롤]에는 400 I.U., 1000 I.U. 두 가지 용량이 있으며 400 I.U.는 1일 1~2캡슐을, 1000 I.U.는 1일 
+                     1캡슐을 복용하시면 됩니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+                <div class="q">
+                 <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                     <p>[코푸시럽]이 이름이 바뀌었다고 하는데 맞나요?</p></a>
+                </div>
+                
+                <div class="a"><span>A.</span>
+                   <p>
+                    유한양행에서는 진해거담제로 전문 의약품인 [코푸시럽(구 제품명:코데나에스 시럽)]과 일반의약품인 
+                    [코푸시럽 에스]를 출시하고 있습니다.</p>
+                    <p>
+                      기존의 [코데나에스 시럽]이 [코푸시럽]으로 제품명이 변경되었으며,
+                     전문 의약품으로 의사의 처방에 의해서만 복용하며 급여혜택을 받으실 수 있습니다. 
+                    </p>
+                     <p>[코푸시럽 에스]는 일반 
+                     의약품으로 의사의 처방전과 상관없이 약국에서 구입 하실 수 있으며
+                     2006년 11월 1일 이후부터는 국가 정책상 비급여로 전환됨에 따라 보험 급여 혜택을 받을 수 없습니다.</p>
+                </div>
+              </li>
+              <li class="account hide">
+              <div class="q">
+                  <a href="#" class="trigger">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>인터넷으로 의약품을 구입하고 싶어요.</p></a>
+              </div>
+                
+                <div class="a"><span>A.</span>
+                  <p>유한양행의 의약품은 약국을 통해서만 공급됩니다.</p>
+                  <p>제약회사와 소비자와의 직거래 및 인터넷판매는 불가능하게 되어 있음을 알려드립니다.</p>
+                   <p>또한 일반의약품의 가격은 판매자 결정제로 판매하는 약국에서 결정하기 때문에 가격은 판매처마다 약간의 차이가 있을 수 있습니다. 
+                  유한양행의 의약품과 의약외품은 약국을 통해서만 판매하고 있으며, 소비자와 제약회사간의 직거래는 하지 않습니다.</p>
+                  
+                </div>
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+      </article>
+
+
+
+    <footer id="footerArea">
+      <div class="footerInner">
+          <a class="topMove" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+          
+          <div class="family">
+            <a class="arrow" href="#">
+              <span>Famliy Site<i class="fas fa-chevron-up"></i></span>
+            </a>
+            
+            <ul class="FList">
+              <li>
+                <a href="#" title="유한킴벌리사이트가새창에열림" target="_blank">유한킴벌리</a>
+              </li>
+              <li>
+                <a href="#" title="유한크로락스사이트가새창에열림" target="_blank">유한크로락스</a>
+              </li>
+              <li>
+                <a href="#" title="유한화학사이트가새창에열림" target="_blank">유한화학</a>
+              </li>
+              <li>
+                <a href="#" title="유한메디카사이트가새창에열림" target="_blank">유한메디카</a>
+              </li>
+              <li>
+                <a href="#" title="한국얀센사이트가새창에열림" target="_blank">한국얀센</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footerLink">
+
+            <ul>
+              <li><a href="#">사이트이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영·관리 방침</a></li>
+              <li><a href="#">사이트이용</a></li>
+              <li><a href="#">도움말</a></li>
+            </ul>
+    
+            <div class="add">
+              <address>
+                <span>주소 서울시 동작구 노량진로 74</span>
+                <span>문의전화 02)828-0181</span><span>FAX 02)828-0050</span
+                >
+                <span>대표자 조욱제</span
+                ><span>사업자등록번호 118-81-00601</span>
+              </address>
+              <p>COPYRIGHT&copy; 2013 YUHAN. ALL RIGHT RESERVED</p>
+            </div>
+
+          </div>
+    
+          
+        </div>
+  </footer>
+
+  </div>
+ 
+ <script src="../js/jquery-1.12.4.min.js"></script>
+ <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="../js/main.js"></script>
+ <script src="./js/acodi.js"></script>
+
+ 
+ 
+</body>
+</html>

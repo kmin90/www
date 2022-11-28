@@ -1,0 +1,245 @@
+/* 제품정보 본문 영역 */
+.contentArea > p {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    font-size: 1.75em;
+    color: #3672c3;
+    font-weight: 600;
+  }
+
+.contentArea .contentInner{
+    width: 1200px;
+    margin: 0 auto;
+    
+  }
+
+
+.contentArea .contentInner form{
+    position: relative;
+    text-align: center;
+    }
+
+.contentArea .contentInner form #searchIn{
+    font-size: 1.1em;
+    width: 800px;
+    height: 16px;
+    padding: 14px 20px;
+    border: 2px solid #00943a;
+    outline: none;
+}
+.contentArea .contentInner form #btn{
+    width: 35px;
+    height: 35px;
+    text-indent: -999px;
+    overflow: hidden;
+    border: 0;
+    background: url(../images/content1/btn.png);
+    position: absolute; top: 7px; right: 190px;
+
+}
+.contentArea .contentInner dl{
+    width: 800px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+.contentArea .contentInner dl dt{
+    padding: 10px 50px 10px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    float: left;}
+.contentArea .contentInner dl dd{
+    padding: 10px 15px;
+    font-size: 1.1em;
+    float: left;}
+
+#list_search3{
+    width: 1100px;
+    margin: 100px 0 20px 0;
+}
+#list_item{
+    border: 1px solid #ccc;
+    width: 368px;
+    height: 450px;
+    border-radius: 30px;
+    float: left;
+    margin:10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#list_item1 img{
+    width: 300px;
+    height: 300px;
+}
+#list_box{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+#list_box #page_button{
+    text-align: center;
+    border: 1px solid;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#button{
+    text-align: center;
+    padding: 10px;
+}
+#list_item2{
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 20px 0 10px 0;;
+
+}
+#list_item1 img{
+    transition: all .3s;
+    transform: scale(.9);
+}
+#list_item4{
+    
+    text-align: right;
+    margin-top: 35px;
+    margin-right: 20px;
+}
+#list_item4 i{
+    padding: 3px 10px 0 20px;
+}
+#list_item1_2{
+    width: 100%;
+    height: 160px;
+    transition: all .3s;
+    background-color: #eee;
+   
+}
+#list_item:hover #list_item1_2{
+    background-color: #00943a;
+    color: #fff;
+}
+#list_item:hover img{
+    transform: scale(1);
+}
+/* view.php */
+
+
+
+#view_title{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-bottom: 1px solid #ccc;
+}
+#view_title1{
+    font-weight: 500;
+    background: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 10px 0 10px 10px;
+}
+#view_title2{
+padding: 10px 0;
+}
+#view_title3{
+text-align: right;
+padding: 10px 0;
+margin-right: 10px;
+}
+#view_title3 i{
+    padding: 0 5px 0 20px;
+}
+
+#view_content{
+    text-align: left;
+    margin-left: 550px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+#view_content img{
+    border: 1px solid #eee;
+    position: absolute;
+    top:50px;
+    left: -400px;
+}
+
+#view_button{
+    text-align: right;
+    margin: 20px 10px 100px 0;
+}
+#view_button a{
+    transition: all .3s;
+    background-color:  #fff;
+    border: 1px solid #3672c3;
+    padding: 5px 10px;
+}
+#view_button a:hover{
+    background-color:  #3672c3;
+   color: #fff;
+}
+
+
+/* write_form */
+#write_form{
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    text-align: left;
+    overflow: hidden;
+}
+
+#write_row1{
+   overflow: hidden;
+}
+#write_form .cent{
+     float: left;
+     width: 50%;
+     padding: 8px 0 8px 0;
+     text-align: center;
+     background: #eee;
+}
+
+#write_row2{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+#write_row2 div,
+#write_row3 div{
+    padding: 10px 0 10px 20px;
+    float: left;
+}
+#write_row2 input{
+padding: 5px;
+width: 800px;
+}
+
+#write_row4,
+#write_row5,
+#write_row6{
+    margin-left: 660px;
+    margin-top: 5px;
+}
+#write_button{
+    margin: 20px 0 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+.mapInner {
+  position: relative;
+}
+.mapInner #map {
+  z-index: 0;
+  width: 1200px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.mapInner .mapAdd { 
+  z-index: 20;
+  width: 800px;
+  height: 200px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
+  position: absolute;
+  top: 575px;
+  left: 50%;
+  margin-left: -400px;
+  border-radius: 30px;
+}
+.mapInner .mapAdd p {
+  font-size: 1.2em;
+  z-index: 30;
+}
+.mapInner .mapAdd p span {
+  z-index: 30;
+  color: #00943a;
+  font-weight: 500;
+  padding: 0 20px 0 30px;
+}
+.mapInner .mapAdd p:first-child {
+  z-index: 30;
+  font-weight: 500;
+  font-size: 1.7em;
+  padding: 40px 0;
+  margin-top: 5px;
+}
+.mapInner ul {
+  width: 1200px;
+  margin: 300px auto;
+}
+
+.mapInner ul li {
+  width: 600px;
+  margin: 0 auto;
+}
+.mapInner ul li dl {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.mapInner ul li dl dt {
+  padding: 30px 0 5px 200px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #00943a;
+}
+
+.mapInner ul li dl dd {
+  padding: 10px 0 5px 200px;
+}
+
+.mapInner ul .subway {
+  margin-bottom: 100px;
+  background: url(../images/content5/subwayIcon.png) 0 20px no-repeat;
+}
+.mapInner ul .bus {
+  position: relative;
+  background: url(../images/content5/busIcon.png) 0 70px no-repeat;
+}
+
+.mapInner ul li dl dd span {
+  padding-right: 20px;
+  font-size: 1.2em;
+  padding-left: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+.mapInner ul li dl dd span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #3672c3;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(2) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #00943a;
+  position: absolute;
+  top: 122px;
+  left: 200px;
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(3) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #df2727;
+  position: absolute;
+  top: 165px;
+  left: 200px;
+  z-index: -10;
+}
+.mapInner ul li dl dd:nth-child(4) span::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 30px;
+  background: #e5d805;
+  position: absolute;
+  top: 208px;
+  left: 200px;
+  z-index: -10;
+}
