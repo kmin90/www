@@ -86,14 +86,14 @@
 
                     <ul class="go">
                         <li><a href="login_form.php" class="loggo">로그인하러가기</a></li>
-                        <li><a href="pw_find.php">비밀번호를 잊으셨나요? 비밀번호 찾기</a></li>
+                        <li><a href="pw_find.php">비밀번호를 잊으셨나요?<br>비밀번호 찾기</a></li>
                     </ul>
 
 				</div>
 				<div class="clear"></div>
 				
                 <div id="login_line"></div>
-				<div id="join_button"><a href="../member/join.html" class="go_join">아직 회원이 아니신가요? 회원가입 하러가기</a></div>
+				<div id="join_button"><a href="../member/join.html" class="go_join">아직 회원이 아니신가요?<br>회원가입 하러가기</a></div>
 			 </div>			 
 		</div> <!-- end of form_login -->
 

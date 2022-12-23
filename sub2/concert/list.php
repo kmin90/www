@@ -37,7 +37,7 @@
 			exit;
 		}
 
-		$sql = "select * from $table where $find like '%$search%' order by num desc";
+		$sql = "select * from $table where $find1 like '%$search%' or $find2 like '%$search%' order by num desc";
 	}
 	else
 	{
@@ -65,23 +65,22 @@
 <? include "../../common/subphp_header.html" ?>
       <div class="main">
         <img src="../common/images/sub2_bg.jpg" alt="제품소개배경이미지" >
-        <h3>제품소개</h3>
-        <p>Product Descriptions</p>
+        <h3>제품정보</h3>
+        <p>Product Information</p>
       </div>
       <div class="subNav">
         <ul>
-          <li><a href="../../sub2/concert/list.php" class="current">제품정보</a></li>
-          <li><a href="../../sub2/sub2_2.html">제품소식</a></li>
+          <li><a href="../../sub2/concert/list.php" class="current">제품소개</a></li>
           <li><a href="../../sub2/sub2_3.html">브랜드</a></li>
         </ul>
       </div>
       <article id="content">
         <div class="titleArea">
           <div class="lineMap">
-            <span class="home">home</span>&gt; <span>제품소개</span>&gt;
-            <strong>제품정보</strong>
+            <span class="home">home</span>&gt; <span>제품정보</span>&gt;
+            <strong>제품소개</strong>
           </div>
-          <h2>제품정보</h2>
+          <h2>제품소개</h2>
         </div>
 	<div class="contentArea">
           <p>
@@ -89,52 +88,33 @@
           </p>
           <div class="contentInner">
         
-			<form  name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search"> 
+			<form  name="board_form" method="post" action="../concert/list.php?mode=search&table=concert">
+            <label for="find1"></label>
+            <input type="hidden" name="find1" id="name" value="subject">
+			<label for="find2"></label>
+            <input type="hidden" name="find2" value="content">
 				<div id="list_search">
 					<div id="list_search1"> <input
                       type="text"
-                      name="searchIn"
+                      name="search"
                       id="searchIn"
                       autocomplete="off"
-                      placeholder="제품명 / 성분명으로 검색하실 수 있습니다."
+                      placeholder="제품명/효능으로 검색하실 수 있습니다."
                     ></div>
 				<div id="list_search2"><input type="submit" name="btn" id="btn" value="검색버튼"></div>
 				</div>
 			</form>
 			<dl>
 				<dt>인기검색어</dt>
-				<dd><a href="#">&#35;비타민</a></dd>
-				<dd><a href="#">&#35;소화제</a></dd>
-				<dd><a href="#">&#35;생리통</a></dd>
-				<dd><a href="#">&#35;두통</a></dd>
-				<dd><a href="#">&#35;구내염</a></dd>
+				<dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=비타민">&#35;비타민</a></dd>
+				<dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=소화제">&#35;소화제</a></dd>
+				<dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=생리통">&#35;생리통</a></dd>
+				<dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=두통">&#35;두통</a></dd>
+				<dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=결막염">&#35;결막염</a></dd>
 			</dl>
 		<div id="list_box">
 		<div id="list_search3">▷ 총 <?= $total_record ?> 개의 게시물이 있습니다.</div>
 		<div class="clear"></div>
-
-		<!-- <div id="list_top_title">
-			<ul>
-				<li id="list_title1">
-					이미지
-				</li>
-				<li id="list_title2">
-					제목
-				</li>
-				<li id="list_title3">
-				3
-				</li>
-				<li id="list_title4">
-				4
-				</li>
-				<li id="list_title5">
-				5
-				</li>
-				<li id="list_title6">
-				6
-				</li>
-			</ul>		
-		</div> -->
 
 		
 <?		
@@ -173,7 +153,8 @@
 						<div id="list_item1_2">
 							<div id="list_item2"><?= $item_subject ?></div>
 							<div id="list_item3"><?= $item_category ?></div>
-							<div id="list_item4"><?= $item_date ?>
+							<div id="list_item4"><?= $item_nick ?></div>
+							<div id="list_item5"><?= $item_date ?>
 							<i class="fa-regular fa-eye"></i><?= $item_hit ?></div>
 						</div>
 						

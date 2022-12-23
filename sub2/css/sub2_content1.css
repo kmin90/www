@@ -76,11 +76,10 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 #list_box #page_button{
     text-align: center;
-    border: 1px solid;
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -89,6 +88,17 @@
 #button{
     text-align: center;
     padding: 10px;
+    margin-top: 30px;
+}
+#button a{
+    padding: 5px 10px;
+    border: 1px solid #3672c3;
+    margin: 5px;
+    margin-top: 20px;
+}
+#button a:hover{
+    background: #3672c3;
+    color: #fff;
 }
 #list_item2{
     font-size: 1.3em;
@@ -101,12 +111,15 @@
     transform: scale(.9);
 }
 #list_item4{
-    
     text-align: right;
-    margin-top: 35px;
     margin-right: 20px;
 }
-#list_item4 i{
+#list_item5{
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+#list_item5 i{
     padding: 3px 10px 0 20px;
 }
 #list_item1_2{
@@ -123,9 +136,9 @@
 #list_item:hover img{
     transform: scale(1);
 }
+
+
 /* view.php */
-
-
 
 #view_title{
   text-align: center;
@@ -154,6 +167,7 @@ margin-right: 10px;
 }
 
 #view_content{
+    word-break: keep-all;
     text-align: left;
     margin-left: 550px;
     margin-top: 50px;
@@ -196,6 +210,9 @@ margin-right: 10px;
 #write_row1{
    overflow: hidden;
 }
+#write_row1 div{
+float: left; 
+}
 #write_form .cent{
      float: left;
      width: 50%;
@@ -204,33 +221,69 @@ margin-right: 10px;
      background: #eee;
 }
 
-#write_row2{
+#write_row2,
+#write_row3{
     overflow: hidden;
     border-bottom: 1px solid #ccc;
 }
-#write_row2 div,
+
+#write_row2 div{
+    padding: 10px 30px 10px 20px;
+    float: left;
+}
 #write_row3 div{
     padding: 10px 0 10px 20px;
     float: left;
 }
-#write_row2 input{
+#write_row4 div{
+    padding: 10px 30px 10px 20px;
+    float: left;
+}
+#write_row2 input,
+#write_row3 input{
 padding: 5px;
-width: 800px;
+width: 500px;
+}
+#write_row4 textarea{
+    width: 508px;
+}
+#write_row5,
+#write_row6,
+#write_row7{
+    margin-left: 650px;
+    margin-top: 10px;
 }
 
-#write_row4,
-#write_row5,
-#write_row6{
-    margin-left: 660px;
-    margin-top: 5px;
-}
 #write_button{
     margin: 20px 0 100px 0;
 }
 
-
-
-
+#write_button a{
+    font-size: 16px;
+    text-decoration: none;
+    background: #fff;
+    padding: 4px 12px;
+    border: 1px solid #3672c3;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#write_button .btn{
+    font-size: 16px;
+    text-decoration: none;
+    background: #fff;
+    padding: 5px 10px;
+    border: 1px solid #3672c3;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#write_button a:hover{
+    background: #3672c3;
+    color: #fff;
+}
+#write_button .btn:hover{
+    background: #3672c3;
+    color: #fff;
+}
 
 
 

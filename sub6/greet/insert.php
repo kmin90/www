@@ -56,8 +56,8 @@
 	{
     	$subject = htmlspecialchars($subject);
 		$content = htmlspecialchars($content);
-		//$subject = str_replace("'", "&#039;", $subject);
-		//$content = str_replace("'", "&#039;", $content);
+		$subject = str_replace("'", "&#039;", $subject);
+		$content = str_replace("'", "&#039;", $content);
 
 		$sql = "update greet set subject='$subject', content='$content' where num=$num";
 	}
@@ -75,8 +75,8 @@
 		
 		$subject = htmlspecialchars($subject); //중요 함수
 		$content = htmlspecialchars($content);
-		//$subject = str_replace("'", "&#039;", $subject);
-		//$content = str_replace("'", "&#039;", $content);
+		$subject = str_replace("'", "&#039;", $subject);
+		$content = str_replace("'", "&#039;", $content);
 	 //  "(&quot;) '(&#039;) &(&amp;) <(&lt;) >(&gt;)
 
 		$sql = "insert into greet (id, name, nick, subject, content, regist_day, hit, is_html) ";

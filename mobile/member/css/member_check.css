@@ -28,7 +28,7 @@ form{
 .join .button{text-align: center;margin-top: 30px}
 .join .button .ok{border-radius: 20px;
     display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;background: #3672c3;color: #fff;font-size: 14px;cursor: pointer;
-    margin: 0 5px;text-decoration: none;}
+    margin: 0 5px 10px 5px;text-decoration: none;}
     .join .button .ok:hover{
         text-decoration: underline;
     }
@@ -44,7 +44,7 @@ form{
     margin: 0 5px;}
 .join .allcheck{text-decoration: none;border-radius: 20px;
     display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;background: #fff;color: #333;font-size: 14px;cursor: pointer;
-    margin: 0 5px;}
+    margin: 0 5px 10px 5px;}
 
 .join .button .cancel{display: inline-block;width: 200px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
 .join .allcheck{background: transparent; border: 1px solid #333;}
@@ -110,17 +110,22 @@ position: relative;
 }
 
 table tr td input{
-width: 100%;
+width: 80%;
 padding: 10px 5px;
 height: 30px;
 border:0;
 border-bottom: 1px solid #ccc;
+margin-left: 10px;
     }
+
+
 table tr td #email1{
     width: 80px;
+    margin-left: 0;
 }
 table tr td #email2{
   width: 108px;
+  margin-left: 0;
 }
 #hp1{
     margin-right: 5px;
@@ -175,16 +180,6 @@ table tr td a:hover{
 /* 정보수정 */
 
 
-#id{
-  background: #ddd;
-  padding: 5px;
-  font-weight: 600;
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
 #title h3{
     text-align: center;
     font-size: 2em;
@@ -218,19 +213,7 @@ table tr td a:hover{
     width: 95px;
   }
   #nick2{position: relative;}
-  /* #nick2 a{
-    background: #ccc;
-    position: absolute;
-    top: -32px;
-    right: 40px;
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 10px;
-  }
-  #nick2 a:hover{
-    background: #3672c3;
-    color: #fff;
-  } */
+
   #form_join{
     padding: 10px;
     box-sizing: border-box;
@@ -240,17 +223,30 @@ table tr td a:hover{
   }
   #join1{
     position: absolute;
-    top: 5%;
-    left: 3%;
+    top: 0%;
+    left: 0%;
   }
   #join2{
     margin-top: 10px;
     text-align: right;
   }
+  #id{
+    background: #eee;
+    padding: 5px 10px;
+    overflow: hidden;
+  }
+  #id div{
+     float: left;
+     width: 50%;
+     text-align: center;
+  }
+  #id div:nth-child(2){
+    font-weight: 500;
+ }
   #join1 ul li{
     display: flex;
     font-weight: 500;
-    margin-top: 80px;
+    margin-top: 90px;
   } 
   #join1 ul li span{
     display: block;
@@ -267,10 +263,10 @@ table tr td a:hover{
     left: 0;
   }
   #join2 ul {
-    margin-top: 80px;
+    margin-top: 70px;
   }
   #join2 ul li{ 
-    margin-top: 30px;
+    margin-top: 40px;
     padding-top: 20px;
 }
 
@@ -294,3 +290,4 @@ table tr td a:hover{
     background: #3672c3;
     color: #fff;
   }
+ 

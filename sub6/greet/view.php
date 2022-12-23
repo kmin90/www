@@ -60,7 +60,6 @@
 </head>
 
 <body>
-
 <? include "../../common/subphp_header.html" ?>
       <div class="main">
         <img src="../common/images/sub6_bg.png" alt="고객지원배경이미지" >
@@ -84,18 +83,9 @@
         </div>
   
   <div id="content">
-	<div id="col1">
-		<div id="left_menu">
-<?
-			include "../lib/left_menu.php";
-?>
-		</div>
-	</div>
+
 
 	<div id="col2">
-        
-	
-
 		<div id="view_comment"> &nbsp;</div>
 
 		<div id="view_title">
@@ -132,6 +122,7 @@
 
 	</div> <!-- end of col2 -->
   </div> <!-- end of content -->
+  <? include "../../common/subphp_footer.html"; ?>
 </div> <!-- end of wrap -->
 
 </body>

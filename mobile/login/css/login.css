@@ -119,6 +119,10 @@ form>ul li a:hover{
     left: 50%;
     transform: translateX(-50%);
 }
+#id_input_button{
+width: 253px;
+margin: 0 auto;
+}
 
 #id_pw_input h2{
     position: relative;
@@ -135,7 +139,7 @@ form>ul li a:hover{
     transform: translateX(-50%);
 }
 #login2 {
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 #login2 fieldset {
@@ -143,14 +147,20 @@ form>ul li a:hover{
     margin: 0 auto;
 }
 #login2 fieldset label{
-padding: 20px 0;
-text-align: right;
+    margin-right: 15px;
+    padding: 5px 10px;
+    width: 40px;
+    display: block;
 }
 #name{
-    margin-left: 15px;
+    width:190px;
 }
+#id{
+    width:190px;
+}
+
 #hp1{
-    width: 60px;
+    width: 55px;
     height: 30px;
 }
 fieldset input{
@@ -159,7 +169,7 @@ fieldset input{
     box-sizing: border-box;
 }
 fieldset input.hp{
-    width: 60px;
+    width: 55px;
 }
 
 

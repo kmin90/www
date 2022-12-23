@@ -10,7 +10,7 @@ session_start();
     <title>유한양행</title>
     <link rel="stylesheet" href="./common/css/common.css" >
     <link rel="stylesheet" href="./maincss/main.css" >
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" >
     <script
       src="https://kit.fontawesome.com/cb50a41295.js"
       crossorigin="anonymous"
@@ -26,7 +26,7 @@ session_start();
         <ul>
           <li class="link1">
             <a href="#">
-              <img src="./images/main_1.png" alt="">
+              <img src="./images/main_1.png" alt="배경이미지">
               <p>
                 <span>Healthy Life</span>
                 인류의 건강한 삶을 위한 노력
@@ -35,7 +35,7 @@ session_start();
           </li>
           <li class="link2">
             <a href="#">
-              <img src="./images/main_2.png" alt="">
+              <img src="./images/main_2.png" alt="배경이미지">
               <p>
                 <span>Technology</span>
                 연구 개발을 통한 더 나은 가치
@@ -44,7 +44,7 @@ session_start();
           </li>
           <li class="link3">
             <a href="#">
-              <img src="./images/main_3.png" alt="">
+              <img src="./images/main_3.png" alt="배경이미지">
               <p>
                 <span>New Vision</span>
                 전 세계적인 유한으로 발전
@@ -77,10 +77,11 @@ session_start();
         <h3 class="hidden">제품검색</h3>
         <div>
           <p>유한양행의 제품을 검색해보세요</p>
-          <form method="post" action="sub2/concert/list.php?mode=search&table=concert">
-            <label for="find"></label>
-            <input type="hidden" name="find" id="name" value="subject">
-
+          <form method="post" action="sub2/concert/list.php?table=concert&mode=search">
+            <label for="find1"></label>
+            <input type="hidden" name="find1" value="subject">
+            <label for="find2"></label>
+            <input type="hidden" name="find2" value="content">
             <label for="name" class="hidden">제품검색</label>
             <input
               type="text"
@@ -90,15 +91,15 @@ session_start();
               list="dataList_id"
               placeholder="#비타민영양제"
             >
-            <input type="submit" name="btn" id="btn" value="검색버튼">
+            <input type="submit" name="btn" id="btn" value="검색버튼" onClick="hrefLink()">
           </form>
           <dl>
             <dt>추천검색어</dt>
-            <dd><a href="#">&#35;센스데이</a></dd>
-            <dd><a href="#">&#35;안티푸라민</a></dd>
-            <dd><a href="#">&#35;쏘큐정</a></dd>
-            <dd><a href="#">&#35;코엔자임</a></dd>
-            <dd><a href="#">&#35;아이미루 40EX</a></dd>
+            <dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=센스데이">&#35;센스데이</a></dd>
+            <dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=안티푸라민">&#35;안티푸라민</a></dd>
+            <dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=쏘큐정">&#35;쏘큐정</a></dd>
+            <dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=삐콤씨">&#35;삐콤씨</a></dd>
+            <dd><a href="http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=아이미루">&#35;아이미루 40EX</a></dd>
           </dl>
         </div>
       </section>
@@ -121,7 +122,7 @@ session_start();
                 </dd>
                 <dd><span>용법·용량</span>성인 1회 1정, 1일 1회 복용</dd>
               </dl>
-              <a href="#">View more</a>
+              <a href="sub2/concert/view.php?table=concert&num=14&page=1">View more</a>
             </li>
             <li>
               <img src="./images/newProduct_img2.jpg" alt="마그비맥스">
@@ -133,7 +134,7 @@ session_start();
                   1캡슐
                 </dd>
               </dl>
-              <a href="#">View more</a>
+              <a href="sub2/concert/view.php?table=concert&num=13&page=1">View more</a>
             </li>
             <li>
               <img src="./images/newProduct_img3.jpg" alt="삐콤씨파워정">
@@ -148,7 +149,7 @@ session_start();
                   복용
                 </dd>
               </dl>
-              <a href="#">View more</a>
+              <a href="sub2/concert/view.php?table=concert&num=15&page=1">View more</a>
             </li>
           </ul>
           <a href="#" class="before">이전</a>
@@ -329,6 +330,7 @@ session_start();
         </div>
       </section>
 
+      <? include "./lib/func.php"; ?> 
       <section class="news sect">
         <div class="conBox5">
           <div class="newsLeft">
@@ -337,105 +339,10 @@ session_start();
           </div>
 
           <ul>
-            <li>
-              <a
-                target="_blank"
-                href="https://biz.chosun.com/it-science/bio-science/2022/06/20/FDZEMPJNFVHH3O2I377PU22YRA/?utm_source=naver&utm_medium=original&utm_campaign=biz"
-              >
-                <dl>
-                  <dt>
-                    오세웅 유한양행 연구소장 “폐암 신약 ‘렉라자’ 임상 긍정적…
-                    건보 적용되면 3000억 시장 열려”
-                  </dt>
-                  <dd>
-                    유한양행의 폐암 신약 ‘렉라자(성분명: 레이저티닙)’의 국내
-                    임상 3상이 진행 중인 가운데, 임상에서 렉라자의 효과가 입증돼
-                    국내에서 1차 치료제로 쓰이면 연간 3000억원의 매출을 기대할
-                    수 있다는 전망이 나왔다. 렉라자는 유한양행이 지난 2018년
-                    11월 미국 얀센에 1조4000억원 규모로 기술 수출하고 공동
-                    개발하는 비소폐암 3세대 표적 치료제다.
-                    <span>2022.06.20</span>
-                  </dd>
-                </dl>
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://it.chosun.com/site/data/html_dir/2022/06/17/2022061701710.html"
-              >
-                <dl>
-                  <dt>
-                    폐암 신약 '렉라자' 매출 1조 신화 쓸까… 유한양행, 글로벌
-                    제약사 '시동'
-                  </dt>
-                  <dd>
-                    국산 31호 신약 비소세포폐암치료제 ‘렉라자(성분명
-                    레이저티닙)’를 비롯해 유한양행의 신약후보물질들이 해외
-                    임상시험을 본격화, 가속화 하고 있다. 세계 시장에서 경쟁하는
-                    글로벌 신약의 가능성이 점차 커지고 있다는 평가다. 유한양행이
-                    개발한 토종 폐암신약 렉라자의 글로벌 임상이 순항하며
-                    일각에서는 국내 최초 블록버스터(매출 1조원) 신약이 탄생하는
-                    것 아니냐는 기대감이 흘러나온다.
-                    <span>2022.06.20</span>
-                  </dd>
-                </dl>
-
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.hankyung.com/economy/article/202205120008i"
-              >
-                <dl>
-                  <dt>유한양행, 엘레나 론칭해 ‘여성 유산균’ 시장 창출</dt>
-                  <dd>
-                    올해 3월 질 건강 유산균 선도주자인 유한양행의 엘레나는 250만
-                    병 넘는 판매고를 올렸다. 하루 복용량 기준으로 보면 7500만
-                    캡슐이 소비됐다. 2015년 11월 출시 후 6년 4개월 만에 얻은
-                    성과다. 지난해 유한양행이 엘레나 단일 제품을 통해 올린
-                    매출은 214억원이다.
-                    <span>2022.05.21</span>
-                  </dd>
-                </dl>
-
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.mk.co.kr/news/special-edition/view/2022/03/193096/"
-              >
-                <dl>
-                  <dt>
-                    유한양행, '사람을 건강하게 세상을 행복하게' 사회환원 지속
-                  </dt>
-                  <dd>
-                    시대가 변해도 바뀌지 않는 유한의 기본 철학은 가장 좋은
-                    상품을 만들어 국가와 국민의 삶에 기여하고자 하는
-                    창업정신으로부터 시작된다. 단순한 이윤 추구를 넘어 사회적
-                    가치 창출을 목표로 건강한 국민과 행복한 사회를 꿈꿨던 한
-                    청년의 바람은 유한양행과 유한재단, 유한학원을 통해 오늘도
-                    실현되고 있다. 창업자 유일한 박사의 전 재산 사회환원으로
-                    구축된 기업 이윤의 사회환원 시스템은 기업이 사회의 이익을
-                    위해 존재한다고 여겼기에 가능했으며 이는 곧 유한
-                    ESG(환경·책임·투명경영) 활동의 근간이 되고 있다. 유한양행은
-                    유한재단, 유한학원과 함께 지역사회의 지속가능한 발전과 환경
-                    보존을 위한 다양한 사회책임 활동을 실천하며 소중한 가치를
-                    지켜 나가고 있다.
-                    <span>2022.03.02</span>
-                  </dd>
-                </dl>
-
-                <i class="fa-solid fa-plus"></i>
-              </a>
-            </li>
+            <? latest_article("greet", 4, 70 , 100); ?>
           </ul>
-          <a href="#">View more</a>
+       
+          <a href="./sub6/greet/list.php">View more</a>
         </div>
       </section>
     </article>
@@ -448,8 +355,8 @@ session_start();
         z-index: 30;
         position: absolute;
         width: 322px;
-        left: 300px;
-        top: 450px;
+        right: 150px;
+        top: 400px;
       "
     >
       <script>
@@ -462,6 +369,12 @@ session_start();
         if (getCookie("Notice") == "done") {
           hidebox();
         }
+        
+      </script>
+      <script>
+         function hrefLink() {
+	           location.href = "http://kmin90.cafe24.com/sub2/concert/list.php?table=concert&mode=search&find1=subject&find2=content&search=비타민";
+         }
       </script>
       <div>
         <img

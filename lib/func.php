@@ -12,11 +12,11 @@
 		while ($row = mysql_fetch_array($result))   //읽어드린 레코드 만큼..
 		{
 			$num = $row[num];    // 번호를 저장 ******
-			$len_subject = strlen($row[subject]);  // 제목의 길이를 구한다.
+			$len_subject = mb_strlen($row[subject],'utf-8');  // 제목의 길이를 구한다.
 			$subject = $row[subject];    // 제목을 저장한다
 
 			$content = $row[content];
-			$len_content = strlen($row[content]); 
+			$len_content = mb_strlen($row[content],'utf-8'); 
 
 			if ($len_subject > $char_limit)   //제목의 길이가 지정한 길이보다 크면
 			{
@@ -36,33 +36,37 @@
 				$content = $content."...";   // 잘라낸 문자열에 ...을 추가한다.
 			}
 
-			$regist_day = substr($row[regist_day], 0, 10);  // 2015-04-29 날짜만 잘라내서 저장한다.
+			$regist = substr($row[regist_day], 0, 10);  // 2015-04-29 날짜만 잘라내서 저장한다.
+			$regist_day = str_replace('-','.',$regist);
 
-           if($table=='concert'){
-                $file_copied_0 = $row[file_copied_0];
-				if($file_copied_0){
-					echo "
-				       <img class='cimg' src='./$table/data/$file_copied_0'>
-				   ";
-				}else{
-					echo "
-				       <img class='cimg' src='./$table/data/default.jpg'>
-				   ";
-				}
-		   }
+        //    if($table=='concert'){
+        //         $file_copied_0 = $row[file_copied_0];
+		// 		if($file_copied_0){
+		// 			echo "
+		// 		       <img class='cimg' src='./$table/data/$file_copied_0'>
+		// 		   ";
+		// 		}else{
+		// 			echo "
+		// 		       <img class='cimg' src='./$table/data/default.jpg'>
+		// 		   ";
+		// 		}
+		//    }
 
 			echo "
-				<dl class='col1'>
-				  <dt>
-					<a href='./$table/view.php?table=$table&num=$num'>
-						$subject
-					</a>
-				  </dt>
-				  <dd>
-				      $content 
-				      <span>$regist_day</span>
-                  </dd>
-				</dl>	 
+			<li>
+			<a href='./sub6/$table/view.php?table=$table&num=$num'>
+			  <dl>
+				<dt>
+				   $subject
+				</dt>
+				<dd>
+				  $content
+				  <span>$regist_day</span>
+				</dd>
+			  </dl>
+			  <i class='fa-solid fa-plus'></i>
+			</a>
+		  </li>
 			";
 		}
 		mysql_close();  

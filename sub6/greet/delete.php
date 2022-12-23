@@ -5,7 +5,7 @@
    @extract($_POST); 
    @extract($_SESSION);
 
-   include "../lib/dbconn.php";
+   include "../../lib/dbconn.php";
 
    $sql = "delete from greet where num = $num";
    mysql_query($sql, $connect);

@@ -67,7 +67,7 @@
                         </div>
                         <div class="idBox">
                             <label for="id">아이디</label>
-                            <input type="text" name="id" class="find_input find_id" placeholder="아이디를 입력해주세요">
+                            <input type="text" name="id" id="id" class="find_input find_id" placeholder="아이디를 입력해주세요">
                         </div>
 
                         <div class="telBox">
@@ -79,9 +79,9 @@
                                 <option>017</option>
                                 <option>018</option>
                                 <option>019</option>
-                            </select> ㅡ
+                            </select> -
                             <label class="hidden" for="hp2">연락처 가운데3자리</label>
-                            <input class="find_input hp" type="text" id="hp2" name="hp2" title="연락처 가운데3자리를 입력하세요." maxlength="4" placeholder="1234" required> ㅡ
+                            <input class="find_input hp" type="text" id="hp2" name="hp2" title="연락처 가운데3자리를 입력하세요." maxlength="4" placeholder="1234" required> -
                             <label class="hidden" for="hp3">연락처 마지막3자리</label>
                             <input class="find_input hp" type="text" id="hp3" name="hp3" title="연락처 마지막3자리를 입력하세요." maxlength="4" placeholder="0000" required>
                         </div>
@@ -92,13 +92,13 @@
                     
                     <ul class="go">
                         <li><a href="login_form.php" class="loggo">로그인하러가기</a></li>
-                        <li><a href="id_find.php">아이디를 잊으셨나요? 아이디 찾으러가기</a></li>
+                        <li><a href="id_find.php">아이디를 잊으셨나요?<br>아이디 찾으러가기</a></li>
                     </ul>
 				</div>
 				<div class="clear"></div>
 				
                 <div id="login_line"></div>
-                <div id="join_button"><a href="../member/join.html" class="go_join">아직 회원이 아니신가요? 회원가입 하러가기</a></div>
+                <div id="join_button"><a href="../member/join.html" class="go_join">아직 회원이 아니신가요?<br>회원가입 하러가기</a></div>
 
 			 </div>			 
 		</div> <!-- end of form_login -->

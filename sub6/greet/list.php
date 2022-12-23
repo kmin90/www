@@ -22,7 +22,8 @@
 
 	include "../../lib/dbconn.php";
 
-	if(!$scale) $scale=8;			// 한 화면에 표시되는 게시글 수
+	if(!$scale) 
+	$scale=10;			// 한 화면에 표시되는 게시글 수
 
     if ($mode=="search")
 	{
@@ -103,7 +104,6 @@
 					<select name="find">
 								 <option value='subject'>제목</option>
 								 <option value='content'>내용</option>
-								 <option value='nick'>글쓴이</option>
 					</select>
 				</div>
 				<div id="list_search4"><input type="text" name="search"></div>
@@ -117,10 +117,8 @@
 			<label for="scale">리스트개수</label>
 			<select name="scale" onchange="location.href='list.php?scale='+this.value">
 						<option value=''><?=$value?>보기</option>
-						<option value='2'>2</option>
-						<option value='4'>4</option>
-						<option value='6'>6</option>
-						<option value='8'>8</option>
+						<option value='5'>5</option>
+						<option value='10'>10</option>
 			</select>
 		</div>
 
@@ -182,7 +180,7 @@
 		}
 		else
 		{ 
-			echo "<a href='list.php?page=$i&scale=$scale'> $i </a>";
+			echo "<a href='list.php?scale=$scale&page=$i'> $i </a>";
 		}      
    }
 ?>			

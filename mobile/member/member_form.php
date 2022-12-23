@@ -164,7 +164,7 @@ $(document).ready(function(){
      	<tr>
      		<th scope="col"><label for="id" class="hidden">아이디</label></th>
      		<td>
-     			 <input type="text" name="id" id="id" autocomplete="off"
+     			 <input type="text" name="id" autocomplete="off"
                   placeholder="아이디 입력" required>
 			     <span id="loadtext"></span>
      		</td>

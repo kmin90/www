@@ -47,7 +47,7 @@
       {
           alert("제목을 입력하세요!");    
           document.board_form.subject.focus();
-          return;
+     		return;
       }
 
       if (!document.board_form.content.value)
@@ -65,21 +65,20 @@
 <? include "../../common/subphp_header.html" ?>
       <div class="main">
         <img src="../common/images/sub2_bg.jpg" alt="제품소개배경이미지" >
-        <h3>제품소개</h3>
-        <p>Product Descriptions</p>
+        <h3>제품정보</h3>
+        <p>Product Information</p>
       </div>
       <div class="subNav">
         <ul>
           <li><a href="../../sub2/concert/list.php" class="current">제품정보</a></li>
-          <li><a href="../../sub2/sub2_2.html">제품소식</a></li>
           <li><a href="../../sub2/sub2_3.html">브랜드</a></li>
         </ul>
       </div>
       <article id="content">
         <div class="titleArea">
           <div class="lineMap">
-            <span class="home">home</span>&gt; <span>제품소개</span>&gt;
-            <strong>제품정보</strong>
+            <span class="home">home</span>&gt; <span>제품정보</span>&gt;
+            <strong>제품소개</strong>
           </div>
           <h2>제품정보 등록</h2>
         </div>
@@ -118,25 +117,25 @@
 ?>						
 			</div>
 			<div class="write_line"></div>
-			<div id="write_row1">
+			<div id="write_row2">
 				<div class="col1"> 제목 </div>
 			    <div class="col2">
 						<input type="text" name="subject" value="<?=$item_subject?>" >
 					</div>
 			</div>
-			<div id="write_row2">
+			<div id="write_row3">
 				<div class="col1"> 카테고리 </div>
 			    <div class="col2">
 						<input type="text" name="category" value="<?=$item_category?>" >
 					</div>
 			</div>
-			<div id="write_row3">
+			<div id="write_row4">
 				<div class="col1"> 내용 </div>
 			    <div class="col2">
 						<textarea rows="15" cols="79" name="content"><?=$item_content?></textarea>
 					</div>
 			</div>
-			<div id="write_row4">
+			<div id="write_row5">
 				<div class="col1"> 이미지파일1 </div>
 			  <div class="col2">
 					<input type="file" name="upfile[]">
@@ -155,7 +154,7 @@
 	}
 ?>
 	<div class="write_line"></div>
-	<div id="write_row5">
+	<div id="write_row6">
 		<div class="col1"> 이미지파일2  </div>
 		<div class="col2">
 			<input type="file" name="upfile[]">
@@ -173,7 +172,7 @@
 ?>
 			<div class="write_line"></div>
 			<div class="clear"></div>
-			<div id="write_row6"><div class="col1"> 이미지파일3   </div>
+			<div id="write_row7"><div class="col1"> 이미지파일3   </div>
 			                     <div class="col2"><input type="file" name="upfile[]"></div>
 			</div>
 <? 	if ($mode=="modify" && $item_file_2)
@@ -192,8 +191,7 @@
 		</div>
 
 		<div id="write_button">
-		<input type="submit" value="저장" class="btn" onclick="check_input()">&nbsp;
-		<a href="#"><img src="../img/ok.png" onclick="check_input()"></a>&nbsp;
+			<input type="submit" value="저장" class="btn" onclick="check_input()">
 			<a href="list.php?table=<?=$table?>&page=<?=$page?>">
 				목록
 			</a>
